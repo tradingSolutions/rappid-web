@@ -4,34 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RAppID</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-    <link href="../public/css/styles.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet"> <!-- cambiada la ruta -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    <div>
-        
-    </div>
+
     <!-- Side Menu-->
-    
     <div class="overlay" id="overlay"></div>
     <div class="menu" id="menu">
         <div class="menu-top">
             <div class="nav-left-menu col-md-6">
                 <div class="container">
                     <a class="navbar-brand" href="index.html">
-                        <img src="../static/Vector-white.png" alt="RAppID Logo">
+                        <img src="static/Vector-white.png" alt="RAppID Logo">
                     </a>
                 </div>
             </div>
             <span class="close-icon"> <!-- Quitamos "mr-3" para separar los elementos -->
-                <img class="icon" src="../static/cerrar.png" alt="">
+                <img class="icon" src="static/cerrar.png" alt="">
             </span>
         </div>
         <div class="d-flex justify-content-center align-items-center menu-bottom">
@@ -39,66 +37,103 @@
             </div>
             <div class="col-md-6" id="animated-lists">
                 <ul class="menu-list" id="contenidoCollapse-1">
-                    <li class="menu-item"><a href="">Servicios</a></li>
+                    <!-- <li class="menu-item"><a href="">Servicios</a></li>
                     <li class="menu-item"><a href="">Proyectos</a></li>
-                    <li class="menu-item"><a href="">Nosotros</a></li>
+                    <li class="menu-item"><a href="">Nosotros</a></li> -->
                 </ul>
                 <ul class="social-list">
-                    <li class="social-list-item w3-animate-bottom"><a href="">Instagram</a></li>
+                    <!-- <li class="social-list-item w3-animate-bottom"><a href="">Instagram</a></li>
                     <li class="social-list-item w3-animate-bottom"><a href="">LinkedIn</a></li>
-                    <li class="social-list-item w3-animate-bottom"><a href="">Twitter</a></li>
+                    <li class="social-list-item w3-animate-bottom"><a href="">Twitter</a></li> -->
                 </ul>
             </div>
         </div>
     </div>
 
     <!-- Nav Bar-->
-
-    <div class="d-flex custom-nav-bar up-nav-bar">
+    <div class="d-flex custom-nav-bar up-nav-bar show-lg">
         <div class="nav-left col-md-6">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
-                    <img src="../static/Vector.png" alt="RAppID Logo">
+                    <img src="static/Vector.png" alt="RAppID Logo">
                 </a>
             </div>
         </div>
         <div class="nav-right col-md-6 d-flex align-items-center justify-content-between"> <!-- Cambiamos "justify-content-start" por "justify-content-between" -->
             <div class="d-flex align-items-center">
-                <span class="nav-link mr-3">
-                    <img class="icon" src="../static/phone.svg" alt=""> (381) 409-4843
-                </span>
-                <span class="nav-link mr-3">
-                    <img class="icon" src="../static/email.svg" alt=""> nosotros@rappid.com
-                </span>
+
+                <a href="https://api.whatsapp.com/send?phone=543814094843&text=Hola%20,te%20asesoramos%20por%20whatsapp%20gestiona%20tu%20compra%20por%20este%20canal." target="_blank">
+                    <span class="nav-link mr-3">
+                        <img class="icon" src="static/phone.svg" alt=""> (381) 409-4843
+                    </span>
+                </a>
+
+                <a href="mailto:nosotros@rappid.com">
+                    <span class="nav-link mr-3">
+                        <img class="icon" src="static/email.svg" alt=""> nosotros@rappid.com
+                    </span>
+                </a>
             </div>
+
             <div class="d-flex align-items-center">
                 <span class="nav-link bars"> <!-- Quitamos "mr-3" para separar los elementos -->
-                    <img class="icon" src="../static/2.svg" alt="">
+                    <img class="icon" src="static/menu hamburguesa.svg" alt="">
                 </span>
             </div>
         </div>
     </div>
 
-    <!-- Custom Nav-bar -->
+    
+    <div class="d-flex show-sm">
+        
+        <div class="d-flex align-items-center justify-content-between"> <!-- Cambiamos "justify-content-start" por "justify-content-between" -->
+            <a class="navbar-brand" href="index.html">
+                <img src="static/Vector-white.png" alt="RAppID Logo">
+            </a>
 
-    <div class="d-flex custom-nav-bar custom-nav-bar-bottom">
-        <div class="nav-left col-md-6">
-            <div class="container second-nav second-nav-left">
-                <h1>Tu empresa, nuestra empresa, un equipo, una meta. Transformando visiones en realidades</h1>
+            <a href="https://api.whatsapp.com/send?phone=543814094843&text=Hola%20,te%20asesoramos%20por%20whatsapp%20gestiona%20tu%20compra%20por%20este%20canal." target="_blank">
+                <span class="nav-link mr-3">
+                    <img class="icon" src="static/phone.svg" alt="">
+                </span>
+            </a>
+
+            <a href="mailto:nosotros@rappid.com">
+                <span class="nav-link mr-3">
+                    <img class="icon" src="static/email.svg" alt="">
+                </span>
+            </a>
+
+            <span class="nav-link bars"> <!-- Quitamos "mr-3" para separar los elementos -->
+                <img class="icon" src="static/menu hamburguesa.svg" alt="">
+            </span>
+
+        </div>
+    </div>
+
+    
+    <!-- Portada -->
+    <div class="row d-sm-flex custom-nav-bar custom-nav-bar-bottom">
+        <div class="container nav-left col-sm-6"> <!-- col-sm-6 divide en 2 col -->
+            <div class="second-nav second-nav-left">
+                <h1>Tu empresa, nuestra empresa, un equipo, una meta. Transformando visiones en realidades.</h1>
                 <h2 id="changingText"><span>Productos</span></h2>
+
                 <div class="row d-flex justify-content-between align-items-center add-margin">
-                    <div class="col-md-6">
+                    <div class="col-xl-6">
                         <p>Potencia tu negocio con soluciones integrales: desarrollo para traders, aplicaciones a medida, diseño UX/UI y automatización de tareas.</p>
                     </div>
-                    <div class="col-md-6 text-md-right">
+
+                    <div class="col-xl-6 no-padding">
                         <button class="btn btn-primary btn-lg"><a href="">Contáctanos</a></button>
                     </div>
                 </div>
+
             </div>
         </div>
-        <div class="nav-right col-md-6 d-flex align-items-center justify-content-center">
-            <div class="container second-nav second-nav-right d-flex align-items-center justify-content-center">
-                <img src="../static/portada.png" alt="portada">
+
+        <div class="container nav-right col-sm-6 d-flex align-items-center justify-content-center">
+            <div class="second-nav second-nav-right d-flex align-items-center justify-content-center">
+                <img class="img-fluid" src="static/portada.png" width="90%" alt="portada">
             </div>
         </div>
     </div>
@@ -106,19 +141,19 @@
     <!-- Services -->
     
     <div class="section" id="services-section">
-        <div class="container text-center py-5">
-            <h1>Nuestros servicios de desarrollo de software</h1>
+        <div class="container-services text-center">
+            <h2>Nuestros servicios de desarrollo de software</h2>
             <div class="circle-icon">
-                <img src="../static/documentos web global/iconos/flecha 80x80.svg" alt="Icono Circular">
+                <img src="static/documentos web global/iconos/flecha 80x80.svg" alt="Icono Circular">
             </div>
             <div class="row mt-5">
                 <div class="col-md-4 mb-4">
                     <div class="card service-card shadow text-center">
                         <div class="card-body d-flex align-items-center justify-content-start">
                             <div class="icon">
-                                <img src="../static/documentos web global/iconos/52x52/desarrollo.svg" alt="">
+                                <img src="static/documentos web global/iconos/52x52/desarrollo.svg" alt="">
                             </div>
-                            <h4 class="card-title">Desarrollo web y móvil</h3>
+                            <h3 class="card-title">Desarrollo web y móvil</h3>
                         </div>
                         <div class="card-body-right">
                             <p class="card-text"> Nuestro servicio de desarrollo web/app combina experiencia técnica y creatividad para convertir 
@@ -132,9 +167,9 @@
                     <div class="card service-card shadow text-center">
                         <div class="card-body d-flex align-items-center justify-content-start">
                             <div class="icon">
-                                <img src="../static/documentos web global/iconos/52x52/diseño.svg" alt="">
+                                <img src="static/documentos web global/iconos/52x52/diseño.svg" alt="">
                             </div>
-                            <h4 class="card-title">Diseño UX/UI</h3>
+                            <h3 class="card-title">Diseño UX/UI</h3>
                         </div>
                         <div class="card-body-right">
                             <p class="card-text">Nuestra pasión por la innovación y la empatía con el usuario nos impulsa a crear interfaces intuitivas 
@@ -148,9 +183,9 @@
                     <div class="card service-card shadow text-center">
                         <div class="card-body d-flex align-items-center justify-content-start">
                             <div class="icon">
-                                <img src="../static/documentos web global/iconos/52x52/trading.svg" alt="">
+                                <img src="static/documentos web global/iconos/52x52/trading.svg" alt="">
                             </div>
-                            <h4 class="card-title">Trading </h3>
+                            <h3 class="card-title">Trading </h3>
                         </div>
                         <div class="card-body-right">
                             <p class="card-text">Con análisis precisos y estrategias sólidas, te brindamos las herramientas para tomar 
@@ -164,9 +199,9 @@
                     <div class="card service-card shadow text-center">
                         <div class="card-body d-flex align-items-center justify-content-start">
                             <div class="icon">
-                                <img src="../static/documentos web global/iconos/52x52/ciencia de datos.svg" alt="">
+                                <img src="static/documentos web global/iconos/52x52/ciencia de datos.svg" alt="">
                             </div>
-                            <h4 class="card-title">Ciencia de datos</h3>
+                            <h3 class="card-title">Ciencia de datos</h3>
                         </div>
                         <div class="card-body-right">
                             <p class="card-text">Utilizando herramientas de Inteligencia Artificial, Machine Learning y Data Science creamos 
@@ -180,9 +215,9 @@
                     <div class="card service-card shadow text-center">
                         <div class="card-body d-flex align-items-center justify-content-start">
                             <div class="icon">
-                                <img src="../static/documentos web global/iconos/52x52/automatizacion.svg" alt="">
+                                <img src="static/documentos web global/iconos/52x52/automatizacion.svg" alt="">
                             </div>
-                            <h4 class="card-title">Automatización de procesos digitales</h3>
+                            <h3 class="card-title">Automatización de procesos digitales</h3>
                         </div>
                         <div class="card-body-right">
                             <p class="card-text">Nuestro servicio de automatización de procesos digitales optimiza tu flujo de trabajo y libera tu tiempo para lo que realmente importa. Desde tareas repetitivas hasta procesos complejos, con soluciones personalizadas y automatización inteligente, transformamos tus procesos en operaciones fluidas y sin interrupciones</p>
@@ -195,45 +230,46 @@
     </div>
 
     <!-- Gray Section 1 -->
-
-    <div class="container">
+    <div class="container-gray1">
         <div class="gray-section">
-            <h1>Descubre cómo podemos elevar tu marca a un nivel superior con nuestras soluciones</h1>
+            <h2>Descubre cómo podemos elevar tu marca a un nivel superior con nuestras soluciones</h2>
             <div class="btn-contact">Contáctanos</div>
         </div>
     </div>
 
     <!-- Proyects -->
-
-    <div class="proyect-section">
-        <div class="container">
-            <h1>Explora</h1>
-            <h1>Nuestros</h1>
-            <h1>Proyectos</h1>     
+    <div class="proyect-section-2">
+        <div class="container-h2">
+            <h2>Explora</h2>
+            <h2>Nuestros</h2>
+            <h2>Proyectos</h2>     
         </div>   
+    
+        <div class="container-gray2">
+            <div class="gray-section-2"></div>
+        </div>
     </div>
 
-    <div class="container">
-        <div class="gray-section-2"></div>
-    </div>
-
-    <!-- Nueva sección -->
-    <div class="calls">
+    <!-- Calls -->
+    <div class="calls show-tablet-desktop">
         <div class="container">
-            <h1 class="title">Cómo transformamos ideas en realidad</h1>
+            <h2 class="title">Cómo transformamos ideas en realidad</h2>
             <div class="row d-flex">
+
                 <div class="cards-container-project col-md-4 projects-left">
                     <div class="card-project">
                         <div class="step">Paso 1.</div>
-                        <h2>Unete a la llamada exploratoria</h2>
+                        <h3>Unete a la llamada exploratoria</h3>
                         <p>En reunión se plantean las necesidades del cliente y se plantean diferentes enfoques.</p>
                     </div>
-                    <div id="card-2" class="card-project">
-                    <div class="step">Paso 3.</div>
-                        <h2>Comienzo del desarrollo del proyecto.</h2>
+
+                    <div id="card-3" class="card-project">
+                        <div class="step">Paso 3.</div>
+                        <h3>Comienzo del desarrollo del proyecto.</h3>
                         <p>Una vez acordados los plazos, comenzamos a trabajar actualizando cada etapa del proyecto según el feedback del cliente.</p>
                     </div>
                 </div>
+
                 <div class="circle-container col-md-4 projects-center">
                     <div class="circle">1</div>
                     <div class="circle-line"></div>
@@ -243,102 +279,113 @@
                     <div class="circle-line"></div>
                     <div class="circle">4</div>
                 </div>
-                <div class="cards-container-project col-md-4 right-container-project projects-right">
-                    <div class="card-project">
+
+                <div class="cards-container-project col-md-4">
+                    <div id="card-2" class="card-project">
                         <div class="step">Paso 2.</div>
-                        <h2>Definición del equipo y planteo de solución.</h2>
+                        <h3>Definición del equipo y planteo de solución.</h3>
                         <p>Una vez que contamos con toda la información, se plantea una solución y se notifica al equipo de desarrollo.</p>
                     </div>
-                    <button class="btn btn-primary btn-lg"><a href="">Contáctanos</a></button>
+                    <div class="align-items-center">
+
+                        <button class="btn btn-primary btn-lg"><a href="">Contáctanos</a></button>
+                    </div>
                 </div>
             </div>
         </div>        
     </div>
 
-    <div class="container">
+    <!-- Innovar -->
+    <div class="container-innovar">
         <div class="gray-section-3 rounded-top">
             <div class="new-section">
                 <div class="row">
                     <div class="col-md-6">
-                        <h1 class="section-title text-center">Nacidos con la visión<br>de innovar</h1>
+                        <h2 class="section-title text-center">Nacidos con la visión<br>de innovar</h2>
                     </div>
+
                     <div class="col-md-6">
-                        <img src="../static/documentos web global/ilustraciones/02 Home innovar.svg" alt="Imagen">
+                        <img src="static/documentos web global/ilustraciones/02 Home innovar.svg" alt="Imagen">
                     </div>
-                    <h2 class="text-center">Trabaje con los mejores equipos de desarrollo</h2>
-                    <h4 class="text-center">Hasta hoy, hemos completado con éxito más de 100 proyectos para personas y organizaciones medianas y grandes en los EE. UU., Canadá y Europa, de diversas industrias, como eCommerce, tecnología financiera, automatización y logística.</h4>
+
+                    <h2 class="text-center"> Trabaje con los mejores equipos de desarrollo</h2>
+                    <p class="text-center"> Hasta hoy, hemos completado con éxito más de 100 proyectos para personas y organizaciones medianas y grandes en los EE. UU., Canadá y Europa, de diversas industrias, como eCommerce, tecnología financiera, automatización y logística.</p>
                 </div>
             </div>
         </div>
+        <!-- Estadisticas -->
         <div class="pink-section">
             <div class="row d-flex text-center">
                 <div class="col-md-3">
-                    <h1 class="fw-semibold">+400</h1>
+                    <h2 class="fw-bold">+400</h2>
                     <h3>horas de trabajo</h3>
                 </div>
                 <div class="col-md-3">
-                    <h1 class="fw-semibold">+30</h1>
+                    <h2 class="fw-bold">+30</h2>
                     <h3>proyectos terminados</h3>
                 </div>
                 <div class="col-md-3">
-                    <h1 class="fw-semibold">4.9/5</h1>
+                    <h2 class="fw-bold">4.9/5</h2>
                     <h3>clasificacion de clientes</h3>
                 </div>
                 <div class="col-md-3">
-                    <h1 class="fw-semibold">10</h1>
+                    <h2 class="fw-bold">10</h2>
                     <h3>dias de entrega promedio</h3>
                 </div>
             </div>
         </div>
+
+        <!-- Testimonios -->
         <div class="gray-section-4 testimonios rounded-bottom">
             <div class="row d-flex">
                 <div class="col-md-6">
-                    <h1>Voces que validan nuestro compromiso con el trabajo</h1>
+                    <h2>Voces que validan nuestro compromiso con el trabajo</h2>
                     <div class="d-flex align-self-start arrow-container">
-                        <img src="../static/documentos web global/iconos/flecha-i.svg" alt="">
-                        <img src="../static/documentos web global/iconos/flecha-d.svg" alt="">
+                        <img src="static/documentos web global/iconos/flecha-i.svg" alt="">
+                        <img src="static/documentos web global/iconos/flecha-d.svg" alt="">
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <p>We moved from another agency to Polcode. They have a good track record and reviews, their sales process was great, and the audit was impressive. There’s no doubt that Polcode saved the project.
-                    <br>We continue to be really pleased with our results. The project is really big, and there’s a lot of technology inside. We make progress easily and new features keep coming so the code quality is really satisfying.
-                    <br>
-                    <br>Jan Donmez
-                    <br>Founder & CEO at AppyBee</p>
+                    <p>We moved from another agency to Polcode. They have a good track record and reviews, their sales process was great, and the audit was impressive. There’s no doubt that Polcode saved the project. We continue to be really pleased with our results. The project is really big, and there’s a lot of technology inside. We make progress easily and new features keep coming so the code quality is really satisfying.</p>
+                    <h4>Jan Donmez</h4>
+                    <h4>Founder & CEO at AppyBe</h4>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container">
+    <!-- Por que elegirnos -->
+    <div class="container-elegirnos">
         <div class="row d-flex team-section">
             <div class="col-md-6">
             </div>
             <div class="col-md-6">
-                <div class="title-team text-center">
-                    <h1>¿Por qué elegirnos?</h1>
+                <div class="title-team text-left">
+                    <h2>¿Por qué elegirnos?</h2>
                 </div>
                 <div class="row">
                     <div class="col-md-6">
-                        <h4>Excelencia operativa</h4>
+                        <h3>Excelencia operativa</h3>
                         <p>En un mundo impulsado por la innovación, destacamos a través de nuestra excelencia operativa. En cada línea de código que escribimos y en cada solución que desarrollamos, buscamos la perfección en la ejecución.</p>
                     </div>
                     <div class="col-md-6">
-                        <h4>Diversidad de soluciones</h4>
+                        <h3>Diversidad de soluciones</h3>
                         <p>Nuestra diversidad de servicios tecnológicos abarca un amplio espectro, desde desarrollo de software personalizado hasta soluciones de ciencia de datos y automatización. Esta variedad nos permite abordar tus desafíos tecnológicos de manera integral.</p>
                     </div>
                     <div class="col-md-6">
-                        <h4>Compromiso</h4>
+                        <h3>Compromiso</h3>
                         <p>Somos versátiles por diseño. Adaptamos nuestra experiencia a tus necesidades únicas, creando soluciones a medida que hacen realidad tus objetivos. Nuestro compromiso inquebrantable con la calidad y la innovación impulsa cada proyecto que emprendemos.</p>
                     </div>
                     <div class="col-md-6">
-                        <h4>Transparencia</h4>
+                        <h3>Transparencia</h3>
                         <p>Valoramos la transparencia en cada paso. Trabajamos en estrecha colaboración contigo, manteniéndote informado en todo momento. Tu visión es nuestro punto de partida, y te guiamos con honestidad y claridad a lo largo de nuestro viaje juntos.</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="gray-section-4 rounded-bottom rounded-top">
+
+        <!-- Gray Section 5 -->
+        <div class="gray-section-5 rounded-bottom rounded-top">
             <div class="row d-flex">
                 <div class="col-md-1">
                     
@@ -352,10 +399,16 @@
                 </div>
             </div>
         </div>
-        <div class="go-back">
-            <a href="#"><img src="../static/documentos web global/iconos/flecha 24x24.svg" alt=""></a>
+
+        <!-- Boton go back -->
+        <div class="container-go-back">
+            <div class="go-back">
+                <a href="#"><img src="static/documentos web global/iconos/flecha 24x24.svg" alt=""></a>
+            </div>
         </div>
     </div>
+
+    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="row d-flex align-items-center justify-content-center">
@@ -366,15 +419,15 @@
                 <div class="col-md-4">
                     <ul>
                         <li><a href="">Trabaja con nosotros</a></li>
-                        <li><a href=""><img src="../static/email.svg" alt="">  nosotros@rappid.com</a></li>
-                        <li><a href=""><img src="../static/phone.svg" alt="">  (381)554-9563</a></li>
+                        <li><a href=""><img src="static/email.svg" alt="">  nosotros@rappid.com</a></li>
+                        <li><a href=""><img src="static/phone.svg" alt="">  (381)554-9563</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4">
                     <ul>
-                        <li class="d-inline"><a href=""><img src="../static/documentos web global/iconos/48x48/instagram.svg" alt=""></a></li>
-                        <li class="d-inline"><a href=""><img src="../static/documentos web global/iconos/48x48/linkedin.svg" alt=""></a></li>
-                        <li class="d-inline"><a href=""><img src="../static/documentos web global/iconos/48x48/twitter.svg" alt=""></a></li>
+                        <li class="d-inline"><a href=""><img src="static/documentos web global/iconos/48x48/instagram.svg" alt=""></a></li>
+                        <li class="d-inline"><a href=""><img src="static/documentos web global/iconos/48x48/linkedin.svg" alt=""></a></li>
+                        <li class="d-inline"><a href=""><img src="static/documentos web global/iconos/48x48/twitter.svg" alt=""></a></li>
                     </ul>
                 </div>
             </div>

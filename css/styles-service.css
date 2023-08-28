@@ -16,7 +16,7 @@
 
 .page-section {
     height: 750px;
-    background-image: url(../../static/Fondo3.png);
+    background-image: url(../static/Fondo3.png);
     background-size: cover !important;
     background-repeat: no-repeat !important;
     background-attachment: fixed !important;
