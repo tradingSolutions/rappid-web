@@ -141,12 +141,14 @@ span.nav-link.mr-3 {  /* Separacion entre links en nav bar */
     }
 }
 .btn-primary {    /* Boton contactanos */
-    background-color: var(--color-principal) !important;
+    background-color: var(--color-principal);
     border: none;
     padding: 1.5rem 8rem;
     text-transform: uppercase;
     font-weight: bold;
     width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 .btn-primary:hover {
     background-color: var(--color-hover);
@@ -433,12 +435,17 @@ li a{
     margin-top: 19rem;
 }
 .calls button {
-    background-color: var(--color-principal) !important;
+    background-color: var(--color-principal);
     border: none;
     text-transform: uppercase;
     font-weight: bold;
     padding: 1.5rem 8rem;
     margin-top: 22rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.calls button:hover {
+    background-color: var(--color-hover);
 }
 
 /*---------------*/
@@ -589,10 +596,11 @@ li a{
     text-transform: uppercase;
     font-weight: bold;
     padding: 1.5rem 4rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 .gray-section-5 button:hover {
     background-color: var(--color-hover);
-    color: #fff;
 }
 .text-center {
     margin-top: 2rem;
@@ -631,6 +639,9 @@ footer {
     color: #fff;
     background-color: var(--color-principal);
 }
+.col-md-4 h2 {
+    margin-top: 3rem;
+}
 .col-md-4 h2, p {
     margin-left: 2rem;
 }
@@ -639,7 +650,7 @@ footer {
     font-weight: bold;
 }
 .col-md-4 p {
-    margin-bottom: 3rem;
+    margin-bottom: 6rem;
 }
 @media (min-width: 768px) {
     .col-md-4 p {
@@ -647,8 +658,8 @@ footer {
     }
 }
 .col-md-4 .trabaja, .mail {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
 .celular {
-    margin-bottom: 3rem;
+    margin-bottom: 6rem;
 }
