@@ -9,24 +9,43 @@
 }
 
 .title-page {
-    font-size: 150px;
+    width: 80%;
     font-weight: 800;
     color: #fff;
 }
+@media (min-width: 768px) {       
+    .fs-custom {
+        font-size: 120px;
+    }
+}
+
+@media (max-width: 768px) {       
+    .fs-custom {
+        font-size: 80px;
+    }
+}
 
 .page-section {
-    height: 750px;
+    height: 450px;
     background-image: url(../static/Fondo3.png);
     background-size: cover !important;
     background-repeat: no-repeat !important;
     background-attachment: fixed !important;
-    margin-bottom: 100px;
+}
+
+@media (min-width: 768px) {       
+    .page-section {
+        height: 750px;
+        background-image: url(../static/Fondo3.png);
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        background-attachment: fixed !important;
+    }
 }
 
 .circle-icon {
-    position: absolute; /* Añadir posición absoluta */
-    transform: translateX(-50%); /* Centrar horizontalmente */
-    margin-top: 800px;
+    
+    margin-top: -50px;
 }
 
 .description img {
@@ -61,13 +80,20 @@ h2 button {
     font-size: 30px !important;
 }
 
-.vertical-line {
-    border-left: 2px solid #000; 
-    height: 350px; 
-    width: 5px;
-    margin: 0px;
-    padding: 0px;
-    
+@media (max-width: 768px) {       
+    .vertical-line {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {       
+    .vertical-line {
+        border-left: 2px solid #000; 
+        height: 350px; 
+        width: 5px;
+        margin: 0px;
+        padding: 0px;
+    }
 }
 
 .description .btn-primary{
@@ -106,4 +132,8 @@ h2 button {
 .btn-contact {
     padding: 20px 40px;
     
+}
+
+.design-img {
+    width: 80%;
 }

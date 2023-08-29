@@ -26,4 +26,3 @@ barsButton.addEventListener("click", () => {
 closeBtutton.addEventListener("click", () => {
     overlay.classList.remove("active");
 });
-
