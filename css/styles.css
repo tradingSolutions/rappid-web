@@ -24,9 +24,11 @@ a {
     max-width: 120rem;
     margin: 0 auto;
 }
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .menu-item a {
     font-family: var(--fuentePrincipal);
 }
+
+
 h1 {
     font-size: 3rem;
 }
@@ -52,8 +54,8 @@ ul {
     color: white;
 }
 .bars {               /* Menu hamburguesa */
-    margin-right: 5rem;
-    padding-left: 12rem;
+    /* margin-right: 5rem;
+    padding-left: 12rem; */
     cursor: pointer;
 }
 .up-nav-bar, .show-sm {         /* Divisor de nav bar */
@@ -79,7 +81,7 @@ span.nav-link.mr-3 {  /* Separacion entre links en nav bar */
     }
 
     .show-sm {
-        padding: 1rem 0 1rem 2rem;
+        padding: 1rem 2rem 1rem 2rem;
         background-image: url('../static/Fondo3.png') !important;
         background-size: cover !important;
         background-repeat: no-repeat !important;
@@ -170,6 +172,8 @@ button a {
 /*---------------*/
 /*--Transicion---*/
 /*---------------*/
+
+/*Estilos para menu Desktop*/ 
 .menu {
     position: fixed;
     top: 0;
@@ -183,6 +187,7 @@ button a {
     z-index: 2;
     transition: width 0.5s;
 }
+
 .overlay.active + .menu {
     width: 100%; /* Muestra el menú expandiéndose de derecha a izquierda */
 }
@@ -197,7 +202,8 @@ button a {
 .close-icon {
     font-size: 2.4rem;
     cursor: pointer;
-    margin-right: 5rem;
+    margin-right: 10rem;
+    padding-top: 2rem;
 }
 .menu-bottom {
     margin-top: 10rem;
@@ -209,11 +215,21 @@ button a {
     padding: 0;
     margin: 0;
     color: #fff;
+    margin-left: 2rem;
 }
+
 .menu-list li {
-    font-size: 8rem;
-    font-weight: 900;
+    font-size: 4rem;
+    font-weight: 800;
 }
+
+@media (min-width: 768px) {
+    .menu-list li {
+        font-size: 8rem;
+        font-weight: 900;
+    }
+}
+
 /* Estilos para las redes sociales */
 .social-list {
     display: flex;
@@ -221,15 +237,67 @@ button a {
     padding: 0;
     margin-top: 6rem;
     color: #fff;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 2rem;
 }
 .social-list-item {
-    /* margin-right: 1rem; */
-    padding-right: 6rem;
+    margin-right: 2rem;
+    
 }
 li a{
     text-decoration: none;
     color: #fff;
 }
+
+@media (min-width: 768px) {
+    .show-mobile {
+        display: none!important;
+    }
+}
+
+/*Estilos para menu Mobile*/ 
+
+.menuSM {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 0; /* Inicialmente oculto */
+    height: 100%;
+    background-image: url(../static/Fondo3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: 2;
+    transition: width 0.5s;
+}
+
+.overlaySM.active + .menuSM {
+    width: 100%; /* Muestra el menú expandiéndose de derecha a izquierda */
+}
+
+.barsSM {
+    cursor: pointer;
+}
+
+@media (min-width: 575px) {
+    .nav-content {
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .nav-content {
+        justify-content: space-between;
+        text-align: center;
+    }
+}
+
+/* .close-iconSM-custom {
+    justify-content: end;
+    display: flex
+} */
 
 /*---------------*/
 /*---Servicios---*/
@@ -297,7 +365,7 @@ li a{
     margin-bottom: 1rem;
 }
 .btn-custom:hover {
-    background-color: var(--color-principal);
+    background-color: var(--color-hover);
     color: white;
 }
 .img-equal-height {
@@ -332,13 +400,18 @@ li a{
     text-transform: uppercase;
     font-weight: bold;
     cursor: pointer;
-    background-color: var(--color-principal) !important;
+    background-color: var(--color-principal);
     padding: 1.5rem 8rem;
     position: absolute; /* Añadir posición absoluta */
     left: 50%;
     transform: translateX(-50%); /* Centrar horizontalmente */
     bottom: -10%; /* Centrar verticalmente en la mitad inferior */
     z-index: 1;
+    transition: background-color 0.3s, color 0.3s;
+    margin-bottom: 1rem;
+}
+.btn-contact:hover {
+    background-color: var(--color-hover);
 }
 
 /*--------------*/
@@ -603,9 +676,10 @@ li a{
     background-color: var(--color-hover);
 }
 .text-center {
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
     margin-bottom: 0;
 }
+
 
 /*---------------------*/
 /*--- Boton go back ---*/

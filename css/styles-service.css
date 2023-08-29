@@ -21,7 +21,7 @@
 
 @media (max-width: 768px) {       
     .fs-custom {
-        font-size: 80px;
+        font-size: 40px;
     }
 }
 
@@ -101,7 +101,7 @@ h2 button {
     border: none;
     padding: 15px;
     margin-top: 40px;
-    margin-left: 15px;
+    /* margin-left: 15px; */
 }
 
 .offer-section img {

@@ -19,9 +19,11 @@
     
 </head>
 <body>
+    <!-- ------------- -->
+    <!-- Mobile Version-->
+    <!-- ------------- -->
 
-    <!-- Side Menu-->
-    <div class="overlay" id="overlay"></div>
+    <div class="overlay" id="overlay"></div> <!-- Side Menu Start-->
     <div class="menu show-lg" id="menu">
         <div class="menu-top">
             <div class="nav-left-menu col-md-6">
@@ -53,8 +55,8 @@
         </div>
     </div>
 
-    <!-- Nav Bar-->
-    <div class="d-flex custom-nav-bar up-nav-bar show-lg">
+    
+    <div class="d-flex custom-nav-bar up-nav-bar show-lg"> <!-- Nav Bar Start-->
         <div class="nav-left col-md-6">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
@@ -62,57 +64,106 @@
                 </a>
             </div>
         </div>
-        <div class="nav-right col-md-6 d-flex align-items-center justify-content-between"> <!-- Cambiamos "justify-content-start" por "justify-content-between" -->
+        <div class="nav-right col-md-6"> 
             <div class="d-flex align-items-center">
+                <div class="col-md-3 text-center">
+                    <a href="https://api.whatsapp.com/send?phone=543814094843&text=Hola%20,te%20asesoramos%20por%20whatsapp%20gestiona%20tu%20compra%20por%20este%20canal." target="_blank">
+                        <span class="nav-link mr-3">
+                            <img class="icon" src="static/phone.svg" alt=""> +54-3814094843
+                        </span>
+                    </a>
 
+                </div>
+                <div class="col-md-3 text-center">
+                    <a href="mailto:nosotros@rappid.com">
+                        <span class="nav-link mr-3">
+                            <img class="icon" src="static/email.svg" alt=""> nosotros@rappid.com
+                        </span>
+                    </a>
+
+                </div>
+
+                <div class="col-md-3 text-center">
+
+                </div>
+
+                <div class="col-md-3 text-center">
+                    <span class="nav-link bars"> <!-- Quitamos "mr-3" para separar los elementos -->
+                        <img class="icon" src="static/menu hamburguesa.svg" alt="">
+                    </span>
+
+                </div>
+
+            </div>
+            <div class="d-flex align-items-center">
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------- -->
+    <!-- Mobile Version-->
+    <!-- ------------- -->
+
+    <div class="overlaySM" id="overlaySM"></div>
+    <div class="menuSM menu-sm-custom show-mobile" id="menuSM"> <!-- Side Menu Start-->
+        <div class=""> <!-- text-right align-self-start justify-content-end -->
+            <span class="close-iconSM">
+                <img class="icon" src="static/cerrar.png" alt="">
+            </span>
+        </div>
+        <div class="d-flex collapse navbar-collapse custom-collapse mt-5" id="navbarNav">
+            <div class="" id="animated-lists">
+                <ul class="menu-list" id="contenidoCollapse-1">
+                    <li class="menu-item"><a href="">Servicios</a></li>
+                    <li class="menu-item"><a href="">Proyectos</a></li>
+                    <li class="menu-item"><a href="">Nosotros</a></li>
+                </ul>
+                <ul class="col-12 social-list text-center ">
+                    <li class="social-list-item w3-animate-bottom"><a href="">Instagram</a></li>
+                    <li class="social-list-item w3-animate-bottom"><a href="">LinkedIn</a></li>
+                    <li class="social-list-item w3-animate-bottom"><a href="">Twitter</a></li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+    
+
+    <div class="show-sm">
+        <div class="d-flex align-items-center nav-content"> <!-- Nav Bar Start-->
+            
+            <div class="col-sm-3">
+                <a class="navbar-brand" href="index.html">
+                    <img src="static/Vector-white.png" alt="RAppID Logo">
+                </a>
+
+            </div>
+            <div class="col-sm-3">
                 <a href="https://api.whatsapp.com/send?phone=543814094843&text=Hola%20,te%20asesoramos%20por%20whatsapp%20gestiona%20tu%20compra%20por%20este%20canal." target="_blank">
                     <span class="nav-link mr-3">
-                        <img class="icon" src="static/phone.svg" alt=""> (381) 409-4843
+                        <img class="icon" src="static/phone.svg" alt="">
                     </span>
                 </a>
 
+            </div>
+            <div class="col-sm-3">
                 <a href="mailto:nosotros@rappid.com">
                     <span class="nav-link mr-3">
-                        <img class="icon" src="static/email.svg" alt=""> nosotros@rappid.com
+                        <img class="icon" src="static/email.svg" alt="">
                     </span>
                 </a>
-            </div>
 
-            <div class="d-flex align-items-center">
-                <span class="nav-link bars"> <!-- Quitamos "mr-3" para separar los elementos -->
+            </div>
+            <div class="col-sm-3">
+                <span class="nav-link barsSM"> 
                     <img class="icon" src="static/menu hamburguesa.svg" alt="">
                 </span>
+
             </div>
-        </div>
-    </div>
-
-    
-    <div class="d-flex show-sm">
-        
-        <div class="d-flex align-items-center justify-content-between"> <!-- Cambiamos "justify-content-start" por "justify-content-between" -->
-            <a class="navbar-brand" href="index.html">
-                <img src="static/Vector-white.png" alt="RAppID Logo">
-            </a>
-
-            <a href="https://api.whatsapp.com/send?phone=543814094843&text=Hola%20,te%20asesoramos%20por%20whatsapp%20gestiona%20tu%20compra%20por%20este%20canal." target="_blank">
-                <span class="nav-link mr-3">
-                    <img class="icon" src="static/phone.svg" alt="">
-                </span>
-            </a>
-
-            <a href="mailto:nosotros@rappid.com">
-                <span class="nav-link mr-3">
-                    <img class="icon" src="static/email.svg" alt="">
-                </span>
-            </a>
-
-            <span class="nav-link bars"> <!-- Quitamos "mr-3" para separar los elementos -->
-                <img class="icon" src="static/menu hamburguesa.svg" alt="">
-            </span>
 
         </div>
     </div>
-
     
     <!-- Portada -->
     <div class="row d-sm-flex custom-nav-bar custom-nav-bar-bottom">
@@ -194,11 +245,11 @@
                             <p class="card-text">Con análisis precisos y estrategias sólidas, te brindamos las herramientas para tomar 
                                 decisiones y maximizar tu potencial en cada movimiento financiero. Desde divisas hasta acciones, 
                                 nuestro equipo de expertos sigue los ritmos del mercado para ofrecerte insights valiosos.</p>
-                            <a href="" class="btn-custom">Explorar Trading</a>
+                            <a href="www.tradingsolutions.ar" class="btn-custom">Explorar Trading</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <!-- <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
                     <div class="card service-card shadow text-center">
                         <div class="card-body d-flex align-items-center justify-content-start">
                             <div class="icon">
@@ -213,7 +264,7 @@
                             <a href="" class="btn-custom">Explorar Ciencia de Datos</a>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
                     <div class="card service-card shadow text-center">
                         <div class="card-body d-flex align-items-center justify-content-start">
@@ -224,7 +275,7 @@
                         </div>
                         <div class="card-body-right">
                             <p class="card-text">Nuestro servicio de automatización de procesos digitales optimiza tu flujo de trabajo y libera tu tiempo para lo que realmente importa. Desde tareas repetitivas hasta procesos complejos, con soluciones personalizadas y automatización inteligente, transformamos tus procesos en operaciones fluidas y sin interrupciones</p>
-                            <a href="" class="btn-custom">Explorar Automatización</a>
+                            <a href="automatizacion.html" class="btn-custom">Explorar Automatización</a>
                         </div>
                     </div>
                 </div>
@@ -312,7 +363,7 @@
                     </div>
 
                     <h2 class="text-center"> Trabaje con los mejores equipos de desarrollo</h2>
-                    <p class="text-center"> Hasta hoy, hemos completado con éxito más de 100 proyectos para personas y organizaciones medianas y grandes en los EE. UU., Canadá y Europa, de diversas industrias, como eCommerce, tecnología financiera, automatización y logística.</p>
+                    <p class=""> Hasta hoy, hemos completado con éxito más de 100 proyectos para personas y organizaciones medianas y grandes en los EE. UU., Canadá y Europa, de diversas industrias, como eCommerce, tecnología financiera, automatización y logística.</p>
                 </div>
             </div>
         </div>

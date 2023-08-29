@@ -26,3 +26,33 @@ barsButton.addEventListener("click", () => {
 closeBtutton.addEventListener("click", () => {
     overlay.classList.remove("active");
 });
+
+const menuSM = document.getElementById("menuSM");
+const barsButtonSM = document.querySelector(".barsSM")
+const closeBtuttonSM = document.querySelector(".close-iconSM")
+
+const listSM = document.querySelectorAll(".menu-item");
+
+barsButtonSM.addEventListener("click", () => {
+    overlaySM.classList.add("active");
+});
+
+closeBtuttonSM.addEventListener("click", () => {
+    overlaySM.classList.remove("active");
+});
+
+
+// document.addEventListener("DOMContentLoaded", function() {
+    // function openSidebar() {
+    //     document.getElementById("menu").style.width = "100%"; // Ancho deseado de la barra lateral
+    // }
+    // const navbarToggler = document.querySelector('.navbar-toggler');
+    
+    // navbarToggler.addEventListener('click', function() {
+    //     openSidebar()
+    //     console.log('click en boton')
+    // })
+    
+    
+// })
+
