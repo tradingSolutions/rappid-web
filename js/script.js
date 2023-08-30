@@ -42,17 +42,6 @@ closeBtuttonSM.addEventListener("click", () => {
 });
 
 
-// document.addEventListener("DOMContentLoaded", function() {
-    // function openSidebar() {
-    //     document.getElementById("menu").style.width = "100%"; // Ancho deseado de la barra lateral
-    // }
-    // const navbarToggler = document.querySelector('.navbar-toggler');
-    
-    // navbarToggler.addEventListener('click', function() {
-    //     openSidebar()
-    //     console.log('click en boton')
-    // })
-    
-    
-// })
-
+$(document).ready(function(){
+    $('.carousel').carousel();
+});

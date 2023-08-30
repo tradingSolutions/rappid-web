@@ -27,8 +27,6 @@ a {
 h1, h2, h3, h4, h5, h6, .menu-item a {
     font-family: var(--fuentePrincipal);
 }
-
-
 h1 {
     font-size: 3rem;
 }
@@ -205,8 +203,11 @@ button a {
     margin-right: 10rem;
     padding-top: 2rem;
 }
+.close-iconSM img {
+    margin: 4rem 2rem;
+}
 .menu-bottom {
-    margin-top: 10rem;
+    margin-top: 3rem;
     margin-left: 10rem;
 }
 /* Estilos para las listas */
@@ -238,8 +239,7 @@ button a {
     margin-top: 6rem;
     color: #fff;
     flex-wrap: wrap;
-    justify-content: center;
-    margin-left: 2rem;
+    justify-content: center
 }
 .social-list-item {
     margin-right: 2rem;
@@ -294,11 +294,6 @@ li a{
     }
 }
 
-/* .close-iconSM-custom {
-    justify-content: end;
-    display: flex
-} */
-
 /*---------------*/
 /*---Servicios---*/
 /*---------------*/
@@ -320,22 +315,31 @@ li a{
     margin-top: 1.5rem;
 }
 /* ---------------------------------------- */
+.row .mt-5 {
+    padding-right: 8rem;
+    padding-left: 8rem;
+}
 .container-services {
     padding: 2rem;
 }
 @media (min-width: 768px) {
     .container-services {
-        padding: 8rem;
+        padding: 2rem 8rem;
     }
 }
 .container-services h2 {  /* Titulo seccion servicios */
     padding-top: 3rem;
     font-weight: bold;
 }
-.card-body .icon{
+@media (min-width: 768px) {
+    .container-services h2 {
+        padding-top: 6rem;
+    }
+}
+.card-body .icon {
     margin-left: 1rem;
 }
-.card-body .card-title {
+.card-title {
     padding: 1rem 0 0 1rem;
     text-align: left;
 }
@@ -405,7 +409,7 @@ li a{
     position: absolute; /* Añadir posición absoluta */
     left: 50%;
     transform: translateX(-50%); /* Centrar horizontalmente */
-    bottom: -10%; /* Centrar verticalmente en la mitad inferior */
+    bottom: -15%; /* Centrar verticalmente en la mitad inferior */
     z-index: 1;
     transition: background-color 0.3s, color 0.3s;
     margin-bottom: 1rem;
@@ -542,6 +546,7 @@ li a{
     font-weight: bold;
 }
 .gray-section-3 p {
+    text-align: center;
     padding: 2rem 4rem;
     margin-bottom: 0;
     font-size: 1.8rem;
@@ -555,11 +560,24 @@ li a{
         margin-left: -20rem;
     }
 }
+.pink-section {
+    background-color: rgba(167, 74, 201, 0.5);
+    padding: 4rem 2rem;
+}
+@media (min-width: 768px) {
+    .pink-section {
+        margin: 0 8rem;
+        padding: 4rem 2rem;
+    }
+}
+.pink-section h2 {
+    margin-bottom: 2rem;
+}
 
 /*--------------------*/
 /*--- Estadisticas ---*/
 /*--------------------*/
-.pink-section {
+/* .pink-section {
     background-color: rgba(167, 74, 201, 0.5);
     padding: 4rem 2rem;
 }
@@ -578,7 +596,7 @@ li a{
 }
 .fw-bold {
     font-size: 4rem;
-}
+} */
 
 /*-------------------*/
 /*--- Testimonios ---*/
@@ -639,7 +657,7 @@ li a{
     }
 }
 .title-team {
-    margin: 10rem 0 4rem 0;
+    margin: 6rem 0 4rem 0;
 }
 .team-section h3 {
     font-weight: bold;
@@ -654,13 +672,12 @@ li a{
 /*----------------------*/
 .gray-section-5 {
     background-color: var(--color-secundario);
-    padding: 3rem 4rem;
+    padding: 4rem 4rem;
 }
 @media (min-width: 768px) {
     .gray-section-5 {
-        background-color: var(--color-secundario);
         margin: 0 12rem;
-        padding: 3rem 4rem;
+        padding: 6rem 4rem;
     }
 }
 .gray-section-5 button {
@@ -679,7 +696,6 @@ li a{
     /* margin-top: 2rem; */
     margin-bottom: 0;
 }
-
 
 /*---------------------*/
 /*--- Boton go back ---*/
@@ -716,7 +732,12 @@ footer {
 .col-md-4 h2 {
     margin-top: 3rem;
 }
-.col-md-4 h2, p {
+@media (min-width: 768px) {
+    .col-md-4 h2 {
+        margin-top: 0;
+    }
+}
+.text-left h2, .text-left p {
     margin-left: 2rem;
 }
 .col-md-4 .trabaja {
