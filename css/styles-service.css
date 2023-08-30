@@ -1,38 +1,53 @@
 :root {
-    --primary-color: #A84AC9;
-    --secondary-color: #f5f5f5;
+    --color-principal: #A84AC9;
+    --color-secundario: #f5f5f5;
+    --color-terciario: #D9D9D9;
+    --color-hover: #823B9B;
+    --fuentePrincipal: 'Comfortaa', cursive, 'Poppins', sans-serif;
 }
-  
-
 .up-nav-bar {
     background-color: #f5f5f5 !important;
 }
 
+/*----------------*/
+/*---- Portada ---*/
+/*----------------*/
 .title-page {
     width: 80%;
     font-weight: 800;
     color: #fff;
 }
 @media (min-width: 768px) {       
-    .fs-custom {
-        font-size: 120px;
+    .fs-custom {            /*---- Titulo de portada ---*/
+        font-size: 10rem;
     }
 }
-
 @media (max-width: 768px) {       
     .fs-custom {
-        font-size: 40px;
+        font-size: 4rem;
     }
 }
-
+.description {
+    padding: 0 2rem;
+}
+h2 {
+    font-weight: bold;
+}
+@media (min-width: 768px) {
+    h2 {
+        margin-right: 3rem;
+    }
+}
+h2 span {
+    color: var(--color-principal);
+}
 .page-section {
-    height: 450px;
+    height: 45rem;
     background-image: url(../static/Fondo3.png);
     background-size: cover !important;
     background-repeat: no-repeat !important;
     background-attachment: fixed !important;
 }
-
 @media (min-width: 768px) {       
     .page-section {
         height: 750px;
@@ -44,20 +59,11 @@
 }
 
 .circle-icon {
-    
     margin-top: -50px;
 }
 
 .description img {
     width: 100%;
-}
-
-h1 {
-    font-weight: 800;
-}
-
-h1 span {
-    color: var(--primary-color);
 }
 
 .accordion-button:not(.collapsed) {
