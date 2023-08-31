@@ -12,6 +12,22 @@
 /*----------------*/
 /*---- Portada ---*/
 /*----------------*/
+.page-section {    /* Portada Imagen */
+    height: 45rem;
+    background-image: url(../static/Fondo3.png);
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+}
+@media (min-width: 768px) {       
+    .page-section {
+        height: 75rem;
+        background-image: url(../static/Fondo3.png);
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        background-attachment: fixed !important;
+    }
+}
 .title-page {
     width: 80%;
     font-weight: 800;
@@ -27,10 +43,18 @@
         font-size: 4rem;
     }
 }
-.description {
-    padding: 0 2rem;
+.circle-icon {
+    margin-top: -4rem;
 }
-h2 {
+
+.icon-design {
+    color: #000;
+}
+
+/*--------------------*/
+/*---- Descripcion ---*/
+/*--------------------*/
+.description h2 {
     font-weight: bold;
 }
 @media (min-width: 768px) {
@@ -41,49 +65,43 @@ h2 {
 h2 span {
     color: var(--color-principal);
 }
-.page-section {
-    height: 45rem;
-    background-image: url(../static/Fondo3.png);
-    background-size: cover !important;
-    background-repeat: no-repeat !important;
-    background-attachment: fixed !important;
+.description {
+    padding: 0 2rem;
 }
-@media (min-width: 768px) {       
-    .page-section {
-        height: 750px;
-        background-image: url(../static/Fondo3.png);
-        background-size: cover !important;
-        background-repeat: no-repeat !important;
-        background-attachment: fixed !important;
-    }
-}
-
-.circle-icon {
-    margin-top: -50px;
-}
-
 .description img {
-    width: 100%;
+    width: 80%;
+    margin-bottom: 3rem;
+}
+.col-md-4 h2 {
+    margin-bottom: 2rem;
+}
+.description p {
+    margin-bottom: 5rem;
+}
+@media (min-width: 768px) {
+    .col-md-4 .description h2, .col-md-8 .description p {
+        margin-bottom: 10rem;
+    }  
 }
 
-.accordion-button:not(.collapsed) {
-    background-color: #fff;
-}
-
-.accordion-button:focus {
-    box-shadow: none;
-}
-
+/*---- Accordion ---*/
 .accordion-item {
     border: none;
 }
-
-.accordion-item h2 {
-    font-weight: 700;
+h2 button {         /*---- Titulos Accordion ---*/
+    font-size: 3rem !important;
 }
-
-h2 button { 
-    font-size: 30px !important;
+.description .btn-primary{
+    background-color: var(--color-principal);
+    border: none;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+}
+.accordion-button:not(.collapsed) {  /* Al abrir acordeon, el fondo queda blanco */
+    background-color: #fff;
+}
+.accordion-button:focus {            /* Al abrir acordeon, no se crea un borde alrededor del titulo */
+    box-shadow: none;
 }
 
 @media (max-width: 768px) {       
@@ -91,55 +109,75 @@ h2 button {
         display: none;
     }
 }
-
 @media (min-width: 768px) {       
     .vertical-line {
-        border-left: 2px solid #000; 
-        height: 350px; 
-        width: 5px;
-        margin: 0px;
-        padding: 0px;
+        border-left: 2px solid gray; 
+        /* height: 35rem;  */
+        width: 0.3rem;
     }
 }
 
-.description .btn-primary{
-    background-color: #A84AC9 !important;
-    border: none;
-    padding: 15px;
-    margin-top: 40px;
-    /* margin-left: 15px; */
+/*---------------------------*/
+/*---- UX-UI Design Offer ---*/
+/*---------------------------*/
+.container-offer {
+    margin: 0;
 }
-
+.offer-section {
+    margin-top: 10rem;
+}
 .offer-section img {
-    width: 150px;
+    margin-top: 2rem;
+    width: 15rem;
 }
-
-.card {
-    background-color: var(--secondary-color);
-}
-
 .shadow{
     box-shadow: 0 0.3rem 1rem rgba(0,0,0,.45)!important;
 }
-
-.gray-section {
-    padding: 100px 0 !important;
+.card-title-design, .card-title-dev {
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 2rem 2rem 0 2rem;
+}
+.card-body-design p, .card-body-dev p{
+    padding: 0 2rem 2rem 2rem;
 }
 
+/*-----------------------*/
+/*---- Gray Section 1 ---*/
+/*-----------------------*/
+.gray-section {
+    margin-bottom: 6rem;
+}
+@media (min-width: 768px) {
+    .gray-section {
+        padding: 8rem 0;
+    }
+}
+@media (max-width: 768px) {
+    .container-gray-section-1-dev {
+        margin-bottom: 8rem;
+    }
+}
+
+/*---------------------*/
+/*---- Pink section ---*/
+/*---------------------*/
+.pink-section {
+    margin-bottom: 8rem;
+}
+.pink-section-dev {
+    margin-bottom: 0;
+}
+
+/*----------------------*/
+/*---- Grafico ux ui ---*/
+/*----------------------*/
+.design-img {
+    width: 80%;
+}
 .step-img {
     margin: 0 auto;
 }
-
 .step-img img {
-    /* width: 500px; */
     margin: 0 auto;
-}
-
-.btn-contact {
-    padding: 20px 40px;
-    
-}
-
-.design-img {
-    width: 80%;
 }

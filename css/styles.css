@@ -134,6 +134,12 @@ span.nav-link.mr-3 {  /* Separacion entre links en nav bar */
     background-attachment: fixed !important;
     color: white;
 }
+.nav-right-design {
+    padding: 2rem;
+}
+.nav-right-design a {
+    color: #000;
+}
 
 @media (min-width: 768px) {
     .second-nav-right {         /* Imagen portada */
@@ -336,9 +342,9 @@ li a{
         padding-top: 6rem;
     }
 }
-.card-body .icon {
+/* .card-body .icon {
     margin-left: 1rem;
-}
+} */
 .card-title {
     padding: 1rem 0 0 1rem;
     text-align: left;
@@ -560,7 +566,7 @@ li a{
         margin-left: -20rem;
     }
 }
-.pink-section {
+.pink-section, .pink-section-dev {
     background-color: rgba(167, 74, 201, 0.5);
     padding: 4rem 2rem;
 }
@@ -656,8 +662,9 @@ li a{
         padding: 0;
     }
 }
-.title-team {
-    margin: 6rem 0 4rem 0;
+.title-team h2 {
+    margin: 6rem 0 4rem 0 !important;
+    font-weight: bold;
 }
 .team-section h3 {
     font-weight: bold;
@@ -668,7 +675,7 @@ li a{
 }
 
 /*----------------------*/
-/*--- Gray Section 4 ---*/
+/*--- Gray Section 5 ---*/
 /*----------------------*/
 .gray-section-5 {
     background-color: var(--color-secundario);

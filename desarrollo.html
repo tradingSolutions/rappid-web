@@ -17,20 +17,23 @@
     <link rel="icon" type="image/png" href="static/Vector-white.png">
 </head>
 <body>
+    <!-- ----------------->
+    <!-- Desktop Version-->
+    <!-- ----------------->
 
-    <!-- Side Menu-->
+    <!-- Side Menu Start - Desktop -->
     <div class="overlay" id="overlay"></div>
     <div class="menu show-lg" id="menu">
         <div class="menu-top">
-            <div class="nav-left-menu col-md-6">
+            <div class="nav-left-menu col-md-6 d-flex align-items-center">
                 <div class="container">
                     <a class="navbar-brand" href="index.html">
-                        <img src="static/Vector-white.png" alt="RAppID Logo">
+                        <img src="static/Vector-white.png" alt="RAppID Logo" width="5%">
                     </a>
                 </div>
             </div>
-            <span class="close-icon"> 
-                <img class="icon" src="static/cerrar.png" alt="">
+            <span class="close-icon"> <!-- Quitamos "mr-3" para separar los elementos -->
+                <img class="icon" src="static/cerrar.png" alt="close-icon">
             </span>
         </div>
         <div class="d-flex justify-content-center align-items-center menu-bottom">
@@ -39,41 +42,120 @@
             <div class="col-md-6" id="animated-lists">
                 <ul class="menu-list" id="contenidoCollapse-1">
                     <li class="menu-item"><a href="">Servicios</a></li>
-                    <li class="menu-item"><a href="">Proyectos</a></li>
+                    <li class="menu-item"><a href="">Contáctanos</a></li>
                     <li class="menu-item"><a href="">Nosotros</a></li>
                 </ul>
                 <ul class="social-list">
                     <li class="social-list-item w3-animate-bottom"><a href="">Instagram</a></li>
                     <li class="social-list-item w3-animate-bottom"><a href="">LinkedIn</a></li>
-                    <li class="social-list-item w3-animate-bottom"><a href="">Twitter</a></li>
                 </ul>
             </div>
         </div>
     </div>
 
-    <!-- Nav Bar-->
-    <div class="d-flex up-nav-bar">
-        <div class="nav-left col-md-6">
+   <!-- Nav Bar - Desktop -->
+   <div class="d-flex custom-nav-bar up-nav-bar show-lg">
+        <div class="nav-left col-md-6 d-flex align-items-center">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
-                    <img src="static/Vector.png" alt="RAppID Logo">
+                    <img src="static/Vector.png" alt="RAppID Logo" width="5%">
                 </a>
             </div>
         </div>
-        <div class="col-md-6 d-flex align-items-center justify-content-between"> <!-- Cambiamos "justify-content-start" por "justify-content-between" -->
+
+        <div class="nav-right-design col-md-6"> 
             <div class="d-flex align-items-center">
-                <span class="nav-link mr-3">
-                    <img class="icon" src="static/phone.png" alt="">
-                </span>
-                <span class="nav-link mr-3">
-                    <img class="icon" src="static/mail.png" alt="">
-                </span>
+
+                <div class="col-md-3 text-center">
+                    <a href="https://api.whatsapp.com/send?phone=543814094843&text=Hola%20,te%20asesoramos%20por%20whatsapp%20gestiona%20tu%20compra%20por%20este%20canal." target="_blank">
+                        <span class="nav-link mr-3">
+                            <img class="icon-design" src="static/phone copy.svg" alt="phone-icon">+54-3814094843
+                        </span>
+                    </a>
+                </div>
+
+                <div class="col-md-3 text-center">
+                    <a href="mailto:nosotros@rappid.com">
+                        <span class="nav-link mr-3">
+                            <img class="icon-design" src="static/email copy.svg" alt="mail-icon">nosotros@rappid.com
+                        </span>
+                    </a>
+                </div>
+
+                <div class="col-md-3 text-center">
+                </div>
+
+                <div class="col-md-3 text-center">
+                    <span class="nav-link bars">
+                        <img class="icon-design" src="static/menu hamburguesa copy.svg" alt="menu-icon">
+                    </span>
+                </div>
+
             </div>
-            <div class="d-flex align-items-center">
-                <span class="nav-link bars"> <!-- Quitamos "mr-3" para separar los elementos -->
-                    <img class="icon" src="static/menu.png" alt="">
-                </span>
+        </div>
+    </div>
+
+    <!-- ------------- -->
+    <!-- Mobile Version-->
+    <!-- ------------- -->
+
+    <!-- Side Menu Start-->
+    <div class="overlaySM" id="overlaySM"></div>
+    <div class="menuSM menu-sm-custom show-mobile" id="menuSM"> 
+        <div class=""> <!-- text-right align-self-start justify-content-end -->
+            <span class="close-iconSM">
+                <img class="icon" src="static/cerrar.png" alt="">
+            </span>
+        </div>
+        <div class="d-flex collapse navbar-collapse custom-collapse mt-5" id="navbarNav">
+            <div class="" id="animated-lists">
+                <ul class="menu-list" id="contenidoCollapse-1">
+                    <li class="menu-item"><a href="#servicios-anchor">Servicios</a></li>
+                    <li class="menu-item"><a href="#contactanos-anchor">Contáctanos</a></li>
+                    <li class="menu-item"><a href="#nosotros-anchor">Nosotros</a></li>
+                </ul>
+                <ul class="col-12 social-list text-center ">
+                    <li class="social-list-item w3-animate-bottom"><a href="">Instagram</a></li>
+                    <li class="social-list-item w3-animate-bottom"><a href="">LinkedIn</a></li>
+                </ul>
             </div>
+
+        </div>
+    </div>
+
+    <!-- Nav Bar Start-->
+    <div class="show-sm">
+        <div class="d-flex align-items-center nav-content"> 
+
+            <div class="col-sm-3">
+                <a class="navbar-brand" href="index.html">
+                    <img src="static/Vector-white.png" alt="RAppID Logo" width="70%">
+                </a>
+
+            </div>
+            <div class="col-sm-3">
+                <a href="https://api.whatsapp.com/send?phone=543814094843&text=Hola%20,te%20asesoramos%20por%20whatsapp%20gestiona%20tu%20compra%20por%20este%20canal." target="_blank">
+                    <span class="nav-link mr-3">
+                        <img class="icon" src="static/phone.svg" alt="">
+                    </span>
+                </a>
+
+            </div>
+            <div class="col-sm-3">
+                <a href="mailto:nosotros@rappid.com">
+                    <span class="nav-link mr-3">
+                        <img class="icon" src="static/email.svg" alt="">
+                    </span>
+                </a>
+
+            </div>
+            <div class="col-sm-3">
+                <span class="nav-link barsSM">
+                    <img class="icon" src="static/menu hamburguesa.svg" alt="">
+                </span>
+
+            </div>
+
         </div>
     </div>
 
@@ -90,18 +172,18 @@
     <!-- Description -->
     <div class="container description">
         <div class="row">
-            <div class="col-md-4 mb-5">
+            <div class="col-md-4 description">
                 <h2>Construyendo cimientos <span>digitales</span> robustos</h2>
                     
             </div>
-            <div class="col-md-8 mb-5">
+            <div class="col-md-8 description">
                 <p>Nuestro servicio de Desarrollo Frontend y Backend es la base de la excelencia digital. Con nuestra combinación de habilidades técnicas y experiencia estratégica, creamos sistemas que no solo funcionan, sino que también impulsan el éxito.
                     <br>
                     <br>
                     Desde la estética hasta la funcionalidad, nuestro enfoque en el desarrollo integral es la clave para forjar una presencia digital sólida y confiable.</p>
             </div>
-            <div class="col-md-4 mb-5">
-                <img src="static/documentos web global/ilustraciones/11 Desarrollo - dev.svg" alt="">
+            <div class="col-md-4 d-flex justify-content-center">
+                <img src="static/documentos web global/ilustraciones/11 Desarrollo - dev.svg" alt="Dev Image">
             </div>
             <div class="col-md-1 vertical-line"></div>
             <div class="col-md-7 ">
@@ -157,9 +239,9 @@
                             <div class="icon text-center">
                                 <img src="static/documentos web global/ilustraciones/12 Desarrollo - desarrollo web.svg" alt="">
                             </div>
-                            <h4 class="card-title text-center">Desarrollo web</h3>
+                            <h4 class="card-title-dev text-center">Desarrollo web</h3>
                         </div>
-                        <div class="card-body">
+                        <div class="card-body-dev">
                             <p class="card-text text-left">En el mundo digital actual, la presencia en línea es fundamental. 
                                 Nuestro servicio de Desarrollo Web combina la estética y la funcionalidad para crear sitios web 
                                 elegantes y altamente interactivos que resuenan con tus audiencias y objetivos comerciales.</p>
@@ -174,9 +256,9 @@
                             <div class="icon text-center">
                                 <img src="static/documentos web global/ilustraciones/13 Desarrollo - desarrollo movil.svg" alt="">
                             </div>
-                            <h4 class="card-title text-center">Desarrollo móvil</h4>
+                            <h4 class="card-title-dev text-center">Desarrollo móvil</h4>
                         </div>
-                        <div class="card-body">
+                        <div class="card-body-dev">
                             <p class="card-text text-left">La movilidad es la clave para llegar a los usuarios en cualquier momento y lugar. 
                                 A través de nuestro servicio de Desarrollo Móvil, creamos aplicaciones adaptadas a las plataformas líderes 
                                 que garantizan experiencias sin fisuras y un acceso constante a tus servicios.</p>
@@ -191,9 +273,9 @@
                             <div class="icon text-center">
                                 <img src="static/documentos web global/ilustraciones/14 Desarrollo - ecommerce.svg" alt="">
                             </div>
-                            <h4 class="card-title text-center">Desarrollo de eCommerce</h4>
+                            <h4 class="card-title-dev text-center">Desarrollo de eCommerce</h4>
                         </div>
-                        <div class="card-body">
+                        <div class="card-body-dev">
                             <p class="card-text text-left">Nuestro servicio de Desarrollo de Ecommerce construye plataformas de 
                                 compras en línea seguras y eficientes que optimizan la experiencia del cliente, 
                                 impulsan las conversiones y crean relaciones duraderas con los compradores en línea.</p>
@@ -206,9 +288,9 @@
 
     <!-- Gray Section 1 -->
 
-    <div class="container">
+    <div class="container-gray-section-1-dev">
         <div class="gray-section mt-5 mb-5">
-            <h1>¿Listo para dar el primer paso <br>en esta <span>experiencia</span> juntos?</h1>
+            <h2>¿Listo para dar el primer paso en esta <span>experiencia</span> juntos?</h2>
             <div class="btn-contact">Contáctanos</div>
         </div>
     </div>
@@ -258,14 +340,12 @@
         </div>        
     </div>
 
-    <div class="container mb-5">
-        <div class="gray-section-3 rounded-top rounded-bottom">
-            <div class="new-section">
-                <h2 class="text-center">Trabaje con los mejores equipos de desarrollo</h2>
-                <h4 class="text-center">Hasta hoy, hemos completado con éxito más de 100 proyectos para personas y organizaciones medianas y grandes en los EE. UU., Canadá y Europa, de diversas industrias, como eCommerce, tecnología financiera, automatización y logística.</h4>
-            </div>
-        </div>
+    <!-- Pink section -->
+    <div class="pink-section-dev">
+        <h2 class="text-center"> Trabaje con los mejores equipos de desarrollo</h2>
+        <p class="text-center"> Hasta hoy, hemos completado con éxito más de 100 proyectos para personas y organizaciones medianas y grandes en los EE. UU., Canadá y Europa, de diversas industrias, como eCommerce, tecnología financiera, automatización y logística.</p>
     </div>
+
     <!-- Por que elegirnos -->
     <div class="container-elegirnos">
         <div class="row d-flex team-section">
@@ -304,7 +384,6 @@
         <div class="gray-section-5 rounded-bottom rounded-top">
             <div class="row d-flex">
                 <div class="col-md-1">
-                    
                 </div>
                 <div class="col-md-8">
                     <p>Elige una asociación que trasciende lo ordinario.
@@ -349,14 +428,12 @@
                     <ul>
                         <li class="d-inline"><a href=""><img src="static/documentos web global/iconos/48x48/instagram.svg" alt=""></a></li>
                         <li class="d-inline"><a href=""><img src="static/documentos web global/iconos/48x48/linkedin.svg" alt=""></a></li>
-                        <li class="d-inline"><a href=""><img src="static/documentos web global/iconos/48x48/twitter.svg" alt=""></a></li>
                     </ul>
                 </div>
                 <div class="col-md-4 text-left d-md-none"> <!-- SM -->
                     <ul>
                         <li class="d-inline"><a href=""><img src="static/documentos web global/iconos/48x48/instagram.svg" alt=""></a></li>
                         <li class="d-inline"><a href=""><img src="static/documentos web global/iconos/48x48/linkedin.svg" alt=""></a></li>
-                        <li class="d-inline"><a href=""><img src="static/documentos web global/iconos/48x48/twitter.svg" alt=""></a></li>
                     </ul>
                 </div>
             </div>

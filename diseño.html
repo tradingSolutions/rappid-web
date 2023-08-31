@@ -19,20 +19,23 @@
     
 </head>
 <body>
+    <!-- ----------------->
+    <!-- Desktop Version-->
+    <!-- ----------------->
 
-    <!-- Side Menu-->
+    <!-- Side Menu Start - Desktop -->
     <div class="overlay" id="overlay"></div>
     <div class="menu show-lg" id="menu">
         <div class="menu-top">
-            <div class="nav-left-menu col-md-6">
+            <div class="nav-left-menu col-md-6 d-flex align-items-center">
                 <div class="container">
                     <a class="navbar-brand" href="index.html">
-                        <img src="static/Vector-white.png" alt="RAppID Logo">
+                        <img src="static/Vector-white.png" alt="RAppID Logo" width="5%">
                     </a>
                 </div>
             </div>
-            <span class="close-icon"> 
-                <img class="icon" src="static/cerrar.png" alt="">
+            <span class="close-icon"> <!-- Quitamos "mr-3" para separar los elementos -->
+                <img class="icon" src="static/cerrar.png" alt="close-icon">
             </span>
         </div>
         <div class="d-flex justify-content-center align-items-center menu-bottom">
@@ -41,41 +44,120 @@
             <div class="col-md-6" id="animated-lists">
                 <ul class="menu-list" id="contenidoCollapse-1">
                     <li class="menu-item"><a href="">Servicios</a></li>
-                    <li class="menu-item"><a href="">Proyectos</a></li>
+                    <li class="menu-item"><a href="">Contáctanos</a></li>
                     <li class="menu-item"><a href="">Nosotros</a></li>
                 </ul>
                 <ul class="social-list">
                     <li class="social-list-item w3-animate-bottom"><a href="">Instagram</a></li>
                     <li class="social-list-item w3-animate-bottom"><a href="">LinkedIn</a></li>
-                    <li class="social-list-item w3-animate-bottom"><a href="">Twitter</a></li>
                 </ul>
             </div>
         </div>
     </div>
 
-    <!-- Nav Bar-->
-    <div class="d-flex up-nav-bar">
-        <div class="nav-left col-md-6">
+   <!-- Nav Bar - Desktop -->
+   <div class="d-flex custom-nav-bar up-nav-bar show-lg">
+        <div class="nav-left col-md-6 d-flex align-items-center">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
-                    <img src="static/Vector.png" alt="RAppID Logo">
+                    <img src="static/Vector.png" alt="RAppID Logo" width="5%">
                 </a>
             </div>
         </div>
-        <div class="col-md-6 d-flex align-items-center justify-content-between"> <!-- Cambiamos "justify-content-start" por "justify-content-between" -->
+
+        <div class="nav-right-design col-md-6"> 
             <div class="d-flex align-items-center">
-                <span class="nav-link mr-3">
-                    <img class="icon" src="static/phone.png" alt="">
-                </span>
-                <span class="nav-link mr-3">
-                    <img class="icon" src="static/mail.png" alt="">
-                </span>
+
+                <div class="col-md-3 text-center">
+                    <a href="https://api.whatsapp.com/send?phone=543814094843&text=Hola%20,te%20asesoramos%20por%20whatsapp%20gestiona%20tu%20compra%20por%20este%20canal." target="_blank">
+                        <span class="nav-link mr-3">
+                            <img class="icon-design" src="static/phone copy.svg" alt="phone-icon">+54-3814094843
+                        </span>
+                    </a>
+                </div>
+
+                <div class="col-md-3 text-center">
+                    <a href="mailto:nosotros@rappid.com">
+                        <span class="nav-link mr-3">
+                            <img class="icon-design" src="static/email copy.svg" alt="mail-icon">nosotros@rappid.com
+                        </span>
+                    </a>
+                </div>
+
+                <div class="col-md-3 text-center">
+                </div>
+
+                <div class="col-md-3 text-center">
+                    <span class="nav-link bars">
+                        <img class="icon-design" src="static/menu hamburguesa copy.svg" alt="menu-icon">
+                    </span>
+                </div>
+
             </div>
-            <div class="d-flex align-items-center">
-                <span class="nav-link bars"> <!-- Quitamos "mr-3" para separar los elementos -->
-                    <img class="icon" src="static/menu.png" alt="">
-                </span>
+        </div>
+    </div>
+
+    <!-- ------------- -->
+    <!-- Mobile Version-->
+    <!-- ------------- -->
+
+    <!-- Side Menu Start-->
+    <div class="overlaySM" id="overlaySM"></div>
+    <div class="menuSM menu-sm-custom show-mobile" id="menuSM"> 
+        <div class=""> <!-- text-right align-self-start justify-content-end -->
+            <span class="close-iconSM">
+                <img class="icon" src="static/cerrar.png" alt="">
+            </span>
+        </div>
+        <div class="d-flex collapse navbar-collapse custom-collapse mt-5" id="navbarNav">
+            <div class="" id="animated-lists">
+                <ul class="menu-list" id="contenidoCollapse-1">
+                    <li class="menu-item"><a href="#servicios-anchor">Servicios</a></li>
+                    <li class="menu-item"><a href="#contactanos-anchor">Contáctanos</a></li>
+                    <li class="menu-item"><a href="#nosotros-anchor">Nosotros</a></li>
+                </ul>
+                <ul class="col-12 social-list text-center ">
+                    <li class="social-list-item w3-animate-bottom"><a href="">Instagram</a></li>
+                    <li class="social-list-item w3-animate-bottom"><a href="">LinkedIn</a></li>
+                </ul>
             </div>
+
+        </div>
+    </div>
+
+    <!-- Nav Bar Start-->
+    <div class="show-sm">
+        <div class="d-flex align-items-center nav-content"> 
+
+            <div class="col-sm-3">
+                <a class="navbar-brand" href="index.html">
+                    <img src="static/Vector-white.png" alt="RAppID Logo" width="70%">
+                </a>
+
+            </div>
+            <div class="col-sm-3">
+                <a href="https://api.whatsapp.com/send?phone=543814094843&text=Hola%20,te%20asesoramos%20por%20whatsapp%20gestiona%20tu%20compra%20por%20este%20canal." target="_blank">
+                    <span class="nav-link mr-3">
+                        <img class="icon" src="static/phone.svg" alt="">
+                    </span>
+                </a>
+
+            </div>
+            <div class="col-sm-3">
+                <a href="mailto:nosotros@rappid.com">
+                    <span class="nav-link mr-3">
+                        <img class="icon" src="static/email.svg" alt="">
+                    </span>
+                </a>
+
+            </div>
+            <div class="col-sm-3">
+                <span class="nav-link barsSM">
+                    <img class="icon" src="static/menu hamburguesa.svg" alt="">
+                </span>
+
+            </div>
+
         </div>
     </div>
 
@@ -92,16 +174,16 @@
     <!-- Description -->
     <div class="container description">
         <div class="row">
-            <div class="col-md-4 mb-5">
+            <div class="col-md-4 description">
                 <h2>Crea <span>experiencias</span> de usuario únicas, empodera tu negocio</h2>
             </div>
-            <div class="col-md-8 mb-5">
+            <div class="col-md-8 description">
                 <p>En cada línea de código y en cada trazo de diseño, creamos un vínculo entre la tecnología y las personas. No construimos sitios web o aplicaciones; creamos destinos donde los usuarios encuentran valor, facilidad y significado. Nuestros expertos en Diseño UX/UI no solo están bien versados en la estética, sino también en la psicología del usuario y en la ciencia del flujo intuitivo.
                 <br>
                 <br>Nuestra dedicación a la innovación, la estrategia y la tecnología adecuada nos permite construir experiencias que marcan la diferencia.</p>
             </div>
-            <div class="col-md-4 mb-5">
-                <img src="static/documentos web global/ilustraciones/03 Diseño - mobile.svg" alt="">
+            <div class="col-md-4 d-flex justify-content-center">
+                <img src="static/documentos web global/ilustraciones/03 Diseño - mobile.svg" alt="Design Image">
             </div>
             <div class="col-md-1 vertical-line"></div>
             <div class="col-md-7 ">
@@ -169,11 +251,10 @@
     </div>
 
     <!-- UX-UI Design Offer -->
-    
     <div class="offer-section" id="services-section">
         <div class="container ">
 
-            <div class="container row mt-5">
+            <div class="container-offer row mt-5">
 
                 <!-- Tarjeta 1 -->
                 <div class="col-lg-4 col-md-6 mb-4">
@@ -182,9 +263,9 @@
                             <div class="icon text-center">
                                 <img src="static/documentos web global/ilustraciones/04 Diseño - diseño web app.svg" alt="">
                             </div>
-                            <h4 class="card-title text-center">Diseño web/app</h3>
+                            <h3 class="card-title-design text-center">Diseño web/app</h3>
                         </div>
-                        <div class="card-body">
+                        <div class="card-body-design">
                             <p class="card-text text-left"> Diseñamos sitios y aplicaciones web que abarcan desde portafolios personales 
                                 hasta tiendas en línea robustas. Cualquiera sea tu visión, la hacemos realidad con un diseño atractivo
                                 y funcional.</p>
@@ -199,9 +280,9 @@
                             <div class="icon text-center">
                                 <img src="static/documentos web global/ilustraciones/05 Diseño - diseño de interaccion.svg" alt="">
                             </div>
-                            <h4 class="card-title text-center">Diseño de interacción (UI)</h4>
+                            <h3 class="card-title-design text-center">Diseño de interacción (UI)</h3>
                         </div>
-                        <div class="card-body">
+                        <div class="card-body-design">
                             <p class="card-text text-left">Moldeamos las conexiones digitales. Nuestro enfoque en el diseño de interacción garantiza que cada toque, clic y movimiento sea deliberado y satisfactorio.</p>
                         </div>
                     </div>
@@ -214,9 +295,9 @@
                             <div class="icon text-center">
                                 <img src="static/documentos web global/ilustraciones/06 Diseño - diseño de exp de usuario ux.svg" alt="">
                             </div>
-                            <h4 class="card-title text-center">Diseño de experiencia de usuario (UX)</h4>
+                            <h3 class="card-title-design text-center">Diseño de experiencia de usuario (UX)</h3>
                         </div>
-                        <div class="card-body">
+                        <div class="card-body-design">
                             <p class="card-text text-left">Diseñamos para cautivar a tus usuarios. Creamos interfaces que no solo se ven bien, sino que también brindan una experiencia intuitiva y gratificante en cada interacción.</p>
                         </div>
                     </div>
@@ -229,9 +310,9 @@
                             <div class="icon text-center">
                                 <img src="static/documentos web global/ilustraciones/07 Diseño - arq de la info.svg" alt="">
                             </div>
-                            <h4 class="card-title text-center">Arquitectura de la información</h4>
+                            <h3 class="card-title-design text-center">Arquitectura de la información</h3>
                         </div>
-                        <div class="card-body">
+                        <div class="card-body-design">
                             <p class="card-text text-left">Te guiamos sin esfuerzo a través de la información. Organizamos y estructuramos la información en tu sitio para que tus usuarios encuentren lo que necesitan, cuando lo necesitan.</p>
                         </div>
                     </div>
@@ -244,9 +325,9 @@
                             <div class="icon text-center">
                                 <img style="width: 90px;" src="static/documentos web global/ilustraciones/08 Diseño - identidad de marca.svg" alt="">
                             </div>
-                            <h4 class="card-title text-center">Identidad de marca y estrategia</h4>
+                            <h3 class="card-title-design text-center">Identidad de marca y estrategia</h3>
                         </div>
-                        <div class="card-body">
+                        <div class="card-body-design">
                             <p class="card-text text-left">Damos vida a tus valores. Creamos identidades visuales cohesivas y estrategias de comunicación que transmiten tu esencia y resuenan con tu audiencia.</p>
                         </div>
                     </div>
@@ -259,9 +340,9 @@
                             <div class="icon text-center">
                                 <img src="static/documentos web global/ilustraciones/0 Diseño - diseño responsive.svg" alt="">
                             </div>
-                            <h4 class="card-title text-center">Diseño responsive</h4>
+                            <h3 class="card-title-design text-center">Diseño responsive</h3>
                         </div>
-                        <div class="card-body">
+                        <div class="card-body-design">
                             <p class="card-text text-left">Mantenemos tu presencia en todas partes. Diseñamos interfaces que se adaptan a todos los dispositivos, asegurando una experiencia impecable en cualquier pantalla.</p>
                         </div>
                     </div>
@@ -274,9 +355,9 @@
                             <div class="icon text-center">
                                 <img src="static/documentos web global/ilustraciones/09 Diseño - accesibilidad.svg " alt="">
                             </div>
-                            <h4 class="card-title text-center">Cumplimiento de accesibilidad (ADA)</h4>
+                            <h3 class="card-title-design text-center">Cumplimiento de accesibilidad (ADA)</h3>
                         </div>
-                        <div class="card-body">
+                        <div class="card-body-design">
                             <p class="card-text text-left">Creamos soluciones que cumplen con las normas de accesibilidad para que tu sitio sea utilizable por todas las personas, sin importar sus capacidades.</p>
                         </div>
                     </div>
@@ -289,9 +370,9 @@
                             <div class="icon text-center">
                                 <img style="width: 110px;" src="static/documentos web global/ilustraciones/10 Diseño - mantenimiento.svg" alt="">
                             </div>
-                            <h4 class="card-title text-center">Mantenimiento y gestión del sitio web</h4>
+                            <h3 class="card-title-design text-center">Mantenimiento y gestión del sitio web</h3>
                         </div>
-                        <div class="card-body">
+                        <div class="card-body-design">
                             <p class="card-text text-left">Tu presencia, siempre al día. Nos encargamos de mantener tu sitio funcionando sin problemas, actualizado y seguro para que puedas concentrarte en lo que realmente importa: tu negocio.</p>
                         </div>
                     </div>
@@ -302,9 +383,9 @@
 
     <!-- Gray Section 1 -->
 
-    <div class="container">
-        <div class="gray-section mt-5 mb-5">
-            <h1>¿Listo para dar el primer paso <br>en esta <span>experiencia</span> juntos?</h1>
+    <div class="container-gray-section-1">
+        <div class="gray-section mt-5">
+            <h2>¿Listo para dar el primer paso en esta <span>experiencia</span> juntos?</h2>
             <div class="btn-contact">Contáctanos</div>
         </div>
     </div>
@@ -354,17 +435,19 @@
         </div>        
     </div>
 
+    <!-- Pink section -->
+    <div class="pink-section">
+        <h2 class="text-center"> Trabaje con los mejores equipos de desarrollo</h2>
+        <p class="text-center"> Hasta hoy, hemos completado con éxito más de 100 proyectos para personas y organizaciones medianas y grandes en los EE. UU., Canadá y Europa, de diversas industrias, como eCommerce, tecnología financiera, automatización y logística.</p>
+    </div>
+
     <div class="container mb-5">
-        <div class="gray-section-3 rounded-top rounded-bottom">
-            <div class="new-section">
-                <h2 class="text-center">Trabaje con los mejores equipos de desarrollo</h2>
-                <h4 class="text-center">Hasta hoy, hemos completado con éxito más de 100 proyectos para personas y organizaciones medianas y grandes en los EE. UU., Canadá y Europa, de diversas industrias, como eCommerce, tecnología financiera, automatización y logística.</h4>
-            </div>
-        </div>
+        <!-- Grafico ux ui -->
         <div class="step-img mt-5 mb-5 text-center">
             <img class="design-img" src="static/documentos web global/Grafico ux ui.svg" alt="">
         </div>
     </div>
+
     <!-- Por que elegirnos -->
     <div class="container-elegirnos">
         <div class="row d-flex team-section">
@@ -403,7 +486,6 @@
         <div class="gray-section-5 rounded-bottom rounded-top">
             <div class="row d-flex">
                 <div class="col-md-1">
-                    
                 </div>
                 <div class="col-md-8">
                     <p>Elige una asociación que trasciende lo ordinario.
@@ -416,12 +498,11 @@
         </div>
 
         <!-- Boton go back -->
-        
         <div class="go-back">
             <a href="#"><img src="static/documentos web global/iconos/flecha 24x24.svg" alt=""></a>
         </div>
-            
     </div>
+
      <!-- Footer -->
      <footer>
         <div class="container-footer">
@@ -448,14 +529,12 @@
                     <ul>
                         <li class="d-inline"><a href=""><img src="static/documentos web global/iconos/48x48/instagram.svg" alt=""></a></li>
                         <li class="d-inline"><a href=""><img src="static/documentos web global/iconos/48x48/linkedin.svg" alt=""></a></li>
-                        <li class="d-inline"><a href=""><img src="static/documentos web global/iconos/48x48/twitter.svg" alt=""></a></li>
                     </ul>
                 </div>
                 <div class="col-md-4 text-left d-md-none"> <!-- SM -->
                     <ul>
                         <li class="d-inline"><a href=""><img src="static/documentos web global/iconos/48x48/instagram.svg" alt=""></a></li>
                         <li class="d-inline"><a href=""><img src="static/documentos web global/iconos/48x48/linkedin.svg" alt=""></a></li>
-                        <li class="d-inline"><a href=""><img src="static/documentos web global/iconos/48x48/twitter.svg" alt=""></a></li>
                     </ul>
                 </div>
             </div>
