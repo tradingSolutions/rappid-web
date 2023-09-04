@@ -3,7 +3,7 @@
     --color-secundario: #f5f5f5;
     --color-terciario: #D9D9D9;
     --color-hover: #823B9B;
-    --fuentePrincipal: 'Comfortaa', cursive, 'Poppins', sans-serif;
+    --fuentePrincipal: 'Comfortaa', 'Poppins', sans-serif;
 }
 html {
     box-sizing: border-box;     /* significa que el ancho y la altura de un elemento incluyen el relleno y el borde, pero no el margen exterior. Esto es útil para mantener un mejor control del diseño y evitar problemas de desbordamiento.*/
@@ -146,7 +146,7 @@ span.nav-link.mr-3 {  /* Separacion entre links en nav bar */
         margin-top: -10rem;
     }
 }
-.btn-primary {    /* Boton contactanos */
+.btn {    /* Boton contactanos */
     background-color: var(--color-principal);
     border: none;
     padding: 1.5rem 8rem;
@@ -156,7 +156,10 @@ span.nav-link.mr-3 {  /* Separacion entre links en nav bar */
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
-.btn-primary:hover {
+.btn:hover {
+    background-color: var(--color-hover);
+}
+.btn:active {
     background-color: var(--color-hover);
 }
 button a {
@@ -421,6 +424,9 @@ li a{
     margin-bottom: 1rem;
 }
 .btn-contact:hover {
+    background-color: var(--color-hover);
+}
+.btn-contact:active {
     background-color: var(--color-hover);
 }
 

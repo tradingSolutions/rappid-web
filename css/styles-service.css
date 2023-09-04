@@ -3,7 +3,7 @@
     --color-secundario: #f5f5f5;
     --color-terciario: #D9D9D9;
     --color-hover: #823B9B;
-    --fuentePrincipal: 'Comfortaa', cursive, 'Poppins', sans-serif;
+    --fuentePrincipal: 'Comfortaa', 'Poppins', sans-serif;
 }
 .up-nav-bar {
     background-color: #f5f5f5 !important;
@@ -91,11 +91,20 @@ h2 span {
 h2 button {         /*---- Titulos Accordion ---*/
     font-size: 3rem !important;
 }
-.description .btn-primary{
+.btn {
     background-color: var(--color-principal);
     border: none;
     padding: 1.5rem 0;
     margin-top: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-bottom: 1rem;
+}
+.btn:hover {
+    background-color: var(--color-hover);
+}
+.btn:active {
+    background-color: var(--color-hover);
 }
 .accordion-button:not(.collapsed) {  /* Al abrir acordeon, el fondo queda blanco */
     background-color: #fff;
