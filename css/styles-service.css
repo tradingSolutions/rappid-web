@@ -42,9 +42,19 @@
         font-size: 10rem;
     }
 }
+@media (min-width: 768px) {       
+    .title-page-autom {        /*---- Titulo de portada Automatizacion ---*/
+        font-size: 8rem;
+    }
+}
 @media (max-width: 768px) {       
     .fs-custom {
         font-size: 4rem;
+    }
+}
+@media (max-width: 768px) {       
+    .title-page-autom {
+        font-size: 3rem;
     }
 }
 .circle-icon {
@@ -53,6 +63,11 @@
 
 .icon-design {
     color: #000;
+}
+
+.title-page-autom {
+    font-weight: bold;
+    color: white;
 }
 
 /*--------------------*/
