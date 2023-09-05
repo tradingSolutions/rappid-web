@@ -448,9 +448,9 @@ li a{
     height: 50rem;
 } */
 
-/*---------------*/
-/*---  Calls  ---*/
-/*---------------*/
+/*----------------------*/
+/*---  Calls Desktop ---*/
+/*----------------------*/
 @media (max-width: 768px) {
     .show-tablet-desktop {
         display: none !important;
@@ -493,7 +493,7 @@ li a{
     margin: 0.5rem 0;
 }
 
-.card-project .step {
+.card-project .step, .col-sm-8 .step {
     color: var(--color-principal);
 }
 .card-project h3 {
@@ -535,6 +535,37 @@ li a{
 }
 .calls button:hover {
     background-color: var(--color-hover);
+}
+
+/*---------------------*/
+/*---  Calls Mobile ---*/
+/*---------------------*/
+.title-calls {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+@media (max-width: 576px) {
+    .col-sm-8 {
+        flex: 0 0 auto;
+        width: 80%;
+    }
+
+    .col-sm-4 {
+        flex: 0 0 auto;
+        width: 20%;
+    }
+} 
+.card-project-mobile {  
+    border: 2px solid var(--color-principal);
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+}
+.col-sm-8 h3 {
+    margin: 1rem 0;
+}
+.col-sm-8 {
+    margin-bottom: 3rem;
 }
 
 /*---------------*/
@@ -649,6 +680,23 @@ li a{
 }
 .col-md-6 h4 {
     font-weight: bold;
+}
+
+.position-relative {
+    position: relative !important;
+    /* background-color: blue; */
+}
+
+.carousel-control-prev-icon {
+    background-image: url("../static/documentos web global/iconos/flecha-i.svg") !important;
+}
+
+.carousel-control-next-icon {
+    background-image: url("../static/documentos web global/iconos/flecha-d.svg") !important;
+}
+
+.container-calls-mobile {
+    padding: 2rem;
 }
 
 /*-------------------------*/

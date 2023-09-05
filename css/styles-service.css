@@ -146,12 +146,12 @@ h2 button {         /*---- Titulos Accordion ---*/
 .shadow{
     box-shadow: 0 0.3rem 1rem rgba(0,0,0,.45)!important;
 }
-.card-title-design, .card-title-dev {
+.card-title-design, .card-title-dev, .card-title-autom {
     font-size: 1.8rem;
     font-weight: bold;
     padding: 2rem 2rem 0 2rem;
 }
-.card-body-design p, .card-body-dev p{
+.card-body-design p, .card-body-dev p, .card-body-autom p {
     padding: 0 2rem 2rem 2rem;
 }
 

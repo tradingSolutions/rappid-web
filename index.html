@@ -21,6 +21,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 
     <link rel="icon" type="image/png" href="static/Vector-white.png">
 
@@ -309,7 +313,7 @@
         </div>
     </div> -->
 
-    <!-- Calls -->
+    <!-- Calls Desktop -->
     <a id="contactanos-anchor"></a>
     <div class="calls show-tablet-desktop">
         <div class="container">
@@ -354,6 +358,80 @@
             </div>
         </div>
     </div>
+
+    <!-- Calls Mobile -->
+    <a id="contactanos-anchor"></a>
+    <div class="calls-show-mobile d-md-none">
+        <div class="container-calls-mobile"> 
+            <h2 class="title-calls">Cómo transformamos ideas en realidad</h2>
+
+            <div class="row d-flex">
+                <div class="col-sm-4 circle-container">
+                    <div class="circle">1</div>
+                </div>
+
+                <div class="col-sm-8 cards-container">
+                    <div class="card-project-mobile">
+                        <div class="step">Paso 1.</div>
+                        <h3>Unete a la llamada exploratoria</h3>
+                        <p>En reunión se plantean las necesidades del cliente y se plantean diferentes enfoques.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row d-flex">
+                <div class="col-sm-4 circle-container">
+                    <div class="circle">2</div>
+                </div>
+
+                <div class="col-sm-8 cards-container">
+                    <div class="card-project-mobile">
+                        <div class="step">Paso 2.</div>
+                        <h3>Definición del equipo y planteo de solución.</h3>
+                        <p>Una vez que contamos con toda la información, se plantea una solución y se notifica al equipo de desarrollo.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row d-flex">
+                <div class="col-sm-4 circle-container">
+                    <div class="circle">3</div>
+                </div>
+
+                <div class="col-sm-8 cards-container">
+                    <div class="card-project-mobile">
+                        <div class="step">Paso 3.</div>
+                        <h3>Comienzo del desarrollo del proyecto.</h3>
+                        <p>Una vez acordados los plazos, comenzamos a trabajar actualizando cada etapa del proyecto según el feedback del cliente.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row d-flex">
+                <div class="col-sm-4 circle-container">
+                    <div class="circle">4</div>
+                </div>
+
+                <div class="col-sm-8 cards-container">
+                    <div class="align-items-center">
+                        <button class="btn btn-primary btn-lg"><a href="https://api.whatsapp.com/send?phone=543814094843&text=Hola%2C%20estoy%20interesado%20en%20sus%20servicios%20de%20software" target="_blank">Contáctanos</a></button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <!-- <div id="card-3" class="card-project">
+        <div class="step">Paso 3.</div>
+        <h3>Comienzo del desarrollo del proyecto.</h3>
+        <p>Una vez acordados los plazos, comenzamos a trabajar actualizando cada etapa del proyecto según el feedback del cliente.</p>
+    </div>
+
+    <div class="align-items-center">
+        <button class="btn btn-primary btn-lg"><a href="https://api.whatsapp.com/send?phone=543814094843&text=Hola%2C%20estoy%20interesado%20en%20sus%20servicios%20de%20software" target="_blank">Contáctanos</a></button>
+    </div> -->
+
 
     <!-- Innovar -->
     <div class="container-innovar">
@@ -402,15 +480,43 @@
             <div class="row d-flex">
                 <div class="col-md-6">
                     <h2>Voces que validan nuestro compromiso con el trabajo</h2>
-                    <div class="d-flex align-self-start arrow-container">
-                        <img src="static/documentos web global/iconos/flecha-i.svg" alt="flecha-i" title="flecha-i">
-                        <img src="static/documentos web global/iconos/flecha-d.svg" alt="flecha-d" title="flecha-d">
+                    <div class="d-flex justify-content-start arrow-container">
+                        <a class="carousel-control-prev position-relative" href="#cardCarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Anterior</span>
+                        </a>
+                        <a class="carousel-control-next position-relative" href="#cardCarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Siguiente</span>
+                        </a>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <p>We moved from another agency to Polcode. They have a good track record and reviews, their sales process was great, and the audit was impressive. There’s no doubt that Polcode saved the project. We continue to be really pleased with our results. The project is really big, and there’s a lot of technology inside. We make progress easily and new features keep coming so the code quality is really satisfying.</p>
-                    <h4>Jan Donmez</h4>
-                    <h4>Founder & CEO at AppyBe</h4>
+                    <div id="cardCarousel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <p>"El equipo de desarrollo de esta empresa es simplemente excepcional. Me ayudaron a crear una aplicación móvil que superó todas mis expectativas. Su enfoque en el diseño UX/UI hizo que la aplicación fuera intuitiva y hermosa. ¡Los recomendaría a cualquiera!"</p>
+                                <h4>Laura Parker</h4>
+                                <h4>EE.UU.</h4>
+                            </div>
+                            <div class="carousel-item">
+                                <p>"Como trader, necesitaba herramientas personalizadas para analizar el mercado de manera eficiente. Esta empresa no solo creó las soluciones que necesitaba, sino que también me guiaron en cada paso del proceso. Ahora tengo un conjunto de herramientas que me ha ayudado a mejorar mis estrategias de trading."</p>
+                                <h4>Ricardo Vargas</h4>
+                                <h4>Perú</h4>
+                            </div>
+                            <div class="carousel-item">
+                                <p>"La automatización de procesos digitales fue un cambio de juego para mi empresa. Gracias a esta empresa, pudimos eliminar tareas repetitivas y aumentar la eficiencia en nuestras operaciones. ¡El equipo de desarrollo es altamente profesional y comprometido!"</p>
+                                <h4>Emily Anderson Smith</h4>
+                                <h4>Canada</h4>
+                            </div>
+                            <div class="carousel-item">
+                                <p>"Trabajé con ellos en un proyecto de sitio web y quedé impresionado con su atención al detalle y capacidad para cumplir con plazos ajustados. Sin duda, volveré a trabajar con ellos en el futuro."</p>
+                                <h4>Benjamin Mitchell</h4>
+                                <h4>EE.UU.</h4>
+                            </div>
+                        </div>
+                        
+                    </div>
                 </div>
             </div>
         </div>
