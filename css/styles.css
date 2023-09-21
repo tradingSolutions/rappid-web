@@ -15,7 +15,7 @@ html {
 body {
     font-size: 1.6rem;
     background-color: white;
-    user-zoom: fixed;
+    overflow-x: hidden;
 }
 a {
     text-decoration: none;
@@ -819,3 +819,21 @@ footer {
 .celular {
     margin-bottom: 6rem;
 }
+
+/**/
+
+.whatsapp-icon {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 1000;
+    display: block;
+    border-radius: 50%;
+
+  }
+  
+  .whatsapp-icon img {
+    display: block;
+    width: 70px;
+    height: 70px;
+  }
