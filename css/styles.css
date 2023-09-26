@@ -821,7 +821,6 @@ footer {
 }
 
 /* Whatsapp Icon */
-
 .whatsapp-icon {
     position: fixed;
     bottom: 25px;
@@ -829,38 +828,59 @@ footer {
     z-index: 1000;
     display: block;
     border-radius: 50%;
+}
+.whatsapp-icon img {
+display: block;
+width: 70px;
+height: 70px;
+}
+@keyframes slideUp {
+from {
+    transform: translateY(100px); /* Puedes ajustar este valor */
+    opacity: 0;
+}
+to {
+    transform: translateY(0);
+    opacity: 1;
+}
+}
+@keyframes float {
+0%, 100% {
+    transform: translateY(0);
+}
+50% {
+    transform: translateY(-10px); /* Puedes ajustar este valor */
+}
+}
+.whatsapp-icon {
+/* Otros estilos... */
+animation: slideUp 1s forwards, float 2s infinite 1s;
+}
 
-  }
-  
-  .whatsapp-icon img {
-    display: block;
-    width: 70px;
-    height: 70px;
-  }
-
-
-  @keyframes slideUp {
-    from {
-      transform: translateY(100px); /* Puedes ajustar este valor */
-      opacity: 0;
-    }
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
-  
-  @keyframes float {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-10px); /* Puedes ajustar este valor */
-    }
-  }
-  
-  .whatsapp-icon {
-    /* Otros estilos... */
-    animation: slideUp 1s forwards, float 2s infinite 1s;
-  }
+/* error 404 */
+.error404-container {
+    padding: 3rem 0 0 9rem;
+}
+.error-container {
+    padding: 0 3rem 3rem 3rem;
+    text-align: center;
+}
+.image-container {
+    padding: 4rem 0;
+}
+.text-error h1 {
+    margin-bottom: 1rem;
+}
+.text-error p {
+    margin-bottom: 2rem;
+}
+.btn-volver {
+    color: #fff;
+    background-color: var(--color-principal);
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+    /* font-weight: bold; */
+    padding: 1rem 4rem;
+}
   
