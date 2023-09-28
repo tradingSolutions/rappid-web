@@ -1,0 +1,84 @@
+:root {
+    --color-principal: #A84AC9;
+    --color-secundario: #f5f5f5;
+    --color-terciario: #D9D9D9;
+    --color-hover: #823B9B;
+    --fuentePrincipal: 'Arial', sans-serif;
+}
+html {
+    box-sizing: border-box;     /* significa que el ancho y la altura de un elemento incluyen el relleno y el borde, pero no el margen exterior. Esto es útil para mantener un mejor control del diseño y evitar problemas de desbordamiento.*/
+    font-size: 62.5%;           /* 1 rem = 10px - establece el tamaño de fuente base para el documento */
+}
+*, *:before, *:after {
+    box-sizing: inherit;        /*  hace que todos los elementos (incluyendo los pseudo-elementos) hereden el valor del modelo de caja establecido en la etiqueta html */
+}
+body {
+    font-size: 1.6rem;
+    background-color: white;
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none;
+}
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+h1, h2, h3, h4, h5, h6, .menu-item a {
+    font-family: var(--fuentePrincipal);
+}
+h1 {
+    font-size: 3rem;
+}
+h2 {
+    font-size: 3rem;
+}
+h3 {
+    font-size: 2.2rem;
+}
+h4 {
+    font-size: 1.4rem;
+}
+ul {
+    list-style-type: none;
+}
+
+
+
+
+.hero {
+    padding: 100px 0;
+    background: #007bff;
+    color: white;
+}
+
+.navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link {
+    color: #007bff;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-color: #007bff;
+}
+
+.bg-light {
+    background-color: #e6e6e6!important;
+}
+
+#servicios .card {
+    transition: transform .2s;
+}
+
+#servicios .card:hover {
+    transform: scale(1.05);
+}
+
+.footer {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+    color: #212529;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+

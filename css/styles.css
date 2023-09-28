@@ -43,7 +43,6 @@ ul {
     list-style-type: none;
 }
 
-
 /*--------------*/
 /*---Nav Bar ---*/
 /*--------------*/
@@ -726,6 +725,16 @@ li a{
 }
 .equipo {
     justify-content:space-around;
+    width: 50%;
+    height: 25%;
+    align-self: center;
+}
+@media (max-width: 768px) {
+    .equipo {
+        justify-content:space-around;
+        width: 100%;
+        height: auto;
+    }
 }
 
 /*----------------------*/
