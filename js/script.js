@@ -23,6 +23,12 @@ barsButton.addEventListener("click", () => {
     overlay.classList.add("active");
 });
 
+for (i = 0; i < list.length; i++) {
+    list[i].addEventListener("click", () => {
+        overlay.classList.remove("active");
+    });
+}
+
 closeBtutton.addEventListener("click", () => {
     overlay.classList.remove("active");
 });
@@ -36,6 +42,12 @@ const listSM = document.querySelectorAll(".menu-item");
 barsButtonSM.addEventListener("click", () => {
     overlaySM.classList.add("active");
 });
+
+for (i = 0; i < list.length; i++) {
+    listSM[i].addEventListener("click", () => {
+        overlaySM.classList.remove("active");
+    });
+}
 
 closeBtuttonSM.addEventListener("click", () => {
     overlaySM.classList.remove("active");
