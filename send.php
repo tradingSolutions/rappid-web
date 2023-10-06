@@ -26,6 +26,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Enviar el correo electrónico
     if (mail($recipient, $subject, $email_content, $email_headers)) {
+
+        // Correo de respuesta automática
+        $subject_automatico = "Gracias por contactarnos - The Rappid Team";
+        $content_automatico = "Estimado/a $nombre,
+
+Gracias por ponerse en contacto con nosotros. Su mensaje ha sido recibido con éxito.
+
+Nos tomamos cada consulta con seriedad y estaremos revisando su mensaje cuidadosamente para brindarle la respuesta más adecuada. Por favor, espere una respuesta de nuestro equipo en las próximas 24-48 horas.
+
+Agradecemos su paciencia y confianza en nosotros. 
+
+Saludos cordiales,
+
+The Rappid Team";
+
+        $headers_automatico = "From: The Rappid Team <nosotros@rappidtech.com>";
+
+        mail($email, $subject_automatico, $content_automatico, $headers_automatico);
+
         header("Location: http://rappidtech.com?success");
     } else {
         header("Location: http://rappidtech.com?error");
