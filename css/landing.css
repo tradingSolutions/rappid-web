@@ -161,6 +161,9 @@ ul {
         height: auto;
         padding: 4rem;
     }
+    .tablet-center {
+        justify-content: center;
+    }
 }
 
 /* Desktop */
@@ -190,6 +193,7 @@ ul {
     padding: 4rem;
     position: relative;
     height: 60rem;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
